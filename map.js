@@ -217,8 +217,8 @@ map.on("load", function () {
         data: "data/nyc20.geojson",
       },
       paint: {
-        "line-color": "yellow",
-        "line-width": 2
+        "line-color": "black",
+        "line-width": 0.5
       },
     },
     "road-label"
