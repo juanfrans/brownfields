@@ -175,14 +175,14 @@ if (config.showMarkers) {
 var scroller = scrollama();
 
 map.on("load", function () {
-  // var layers = map.getStyle().layers;
-  // for (var i = 0; i < layers.length; i++) {
-  //   console.log(layers[i]);
-  // if (layers[i].type === "symbol") {
-  //   firstSymbolId = layers[i].id;
-  //   break;
-  // }
-  // }
+  var layers = map.getStyle().layers;
+  for (var i = 0; i < layers.length; i++) {
+    console.log(layers[i].id);
+  if (layers[i].type === "symbol") {
+    firstSymbolId = layers[i].id;
+    break;
+  }
+  }
   if (config.use3dTerrain) {
     map.addSource("mapbox-dem", {
       type: "raster-dem",
@@ -221,7 +221,7 @@ map.on("load", function () {
         "line-width": 0.5
       },
     },
-    "road-label"
+    "waterway-label"
   );
   map.addLayer(
     {
@@ -238,7 +238,7 @@ map.on("load", function () {
         "circle-stroke-opacity": 0
       }
     },
-    "road-label"
+    "waterway-label"
   );
   map.addLayer(
     {
@@ -253,7 +253,7 @@ map.on("load", function () {
         "fill-opacity": 0
       }
     },
-    "road-label"
+    "waterway-label"
   );
   map.addLayer(
     {
@@ -278,7 +278,7 @@ map.on("load", function () {
         "fill-opacity": 0
       }
     },
-    "road-label"
+    "waterway-label"
   );
   map.addLayer(
     {
@@ -307,7 +307,7 @@ map.on("load", function () {
         ],
       },
     },
-    "road-label"
+    "waterway-label"
   );
   map.addLayer(
     {
@@ -322,7 +322,7 @@ map.on("load", function () {
         "fill-opacity": 0
       },
     },
-    "road-label"
+    "waterway-label"
   );
 
   // setup the instance, pass callback functions
