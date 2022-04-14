@@ -101,7 +101,7 @@ let divChapter5 =
   '</div>';
 
 var config = {
-  style: "mapbox://styles/jfs2118/ckkx8wkpu58s517rr4wvegkrq",
+  style: "mapbox://styles/jfs2118/cl1z1wypf002i14pcm2b34w8y",
   accessToken:
     "pk.eyJ1IjoiamZzMjExOCIsImEiOiJlMUQzd2YwIn0.WLb3PYDt2z-XttOLFcQlVQ",
   showMarkers: false,
