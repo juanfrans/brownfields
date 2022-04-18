@@ -180,7 +180,7 @@ map.on("load", function () {
     console.log(layers[i].id);
   if (layers[i].type === "symbol") {
     firstSymbolId = layers[i].id;
-    break;
+    // break;
   }
   }
   if (config.use3dTerrain) {
@@ -208,6 +208,20 @@ map.on("load", function () {
 //     if (error) throw error;
 //     map.addImage("lineIcon", image);
 //   });
+map.addLayer(
+  {
+    id: "nyc_land",
+    type: "fill",
+    source: {
+      type: "geojson",
+      data: "data/nyc20.geojson",
+    },
+    paint: {
+      "fill-color": "#f7f7f7",
+    },
+  },
+  "waterway"
+);
   map.addLayer(
     {
       id: "nyc",
@@ -232,13 +246,53 @@ map.on("load", function () {
         data: "data/oerCleanupSites.geojson",
       },
       paint: {
-        "circle-color": "red",
-        "circle-radius": 2,
+        "circle-color": "#3fa078",
+        "circle-stroke-width": 0.3,
+        "circle-radius": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          2.5,
+          14,
+          4,
+          18,
+          12,
+        ],
         "circle-opacity": 0,
         "circle-stroke-opacity": 0
       }
     },
-    "waterway-label"
+    "nyc"
+  );
+  map.addLayer(
+    {
+      id: "eDesignations",
+      type: "circle",
+      source: {
+        type: "geojson",
+        data: "data/eDesignationsSPEED.geojson",
+      },
+      paint: {
+        "circle-opacity": 0,
+        "circle-stroke-opacity": 0,
+        "circle-color": "#ff8500",
+        "circle-stroke-color": "#191919",
+        "circle-stroke-width": 0.3,
+        "circle-radius": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          2.5,
+          14,
+          4,
+          18,
+          12,
+        ],
+      },
+    },
+    "cleanupSites"
   );
   map.addLayer(
     {
@@ -249,11 +303,12 @@ map.on("load", function () {
         data: "data/upzonings.geojson"
       },
       paint: {
-        "fill-color": "purple",
-        "fill-opacity": 0
+        "fill-color": "#d8d8d8",
+        "fill-opacity": 0,
+        "fill-outline-color": "black"
       }
     },
-    "waterway-label"
+    "eDesignations"
   );
   map.addLayer(
     {
@@ -267,47 +322,18 @@ map.on("load", function () {
         "fill-color": ["step", ["get", "year_effec"],
           "#ffffff",
           2002, 
-          "#ccedf5",
+          "#bdd9f5",
           2006,
-          "#99daea",
+          "#80b9db",
           2010,
-          "#66c7e0",
+          "#3e8ec4",
           2014,
-          "#33b5d5",
+          "#ae5d7a",
       ],
         "fill-opacity": 0
       }
     },
-    "waterway-label"
-  );
-  map.addLayer(
-    {
-      id: "eDesignations",
-      type: "circle",
-      source: {
-        type: "geojson",
-        data: "data/eDesignationsSPEED.geojson",
-      },
-      paint: {
-        "circle-opacity": 0,
-        "circle-stroke-opacity": 0,
-        "circle-color": "darkgray",
-        "circle-stroke-color": "black",
-        "circle-stroke-width": 0.5,
-        "circle-radius": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          10,
-          3.5,
-          14,
-          4,
-          18,
-          12,
-        ],
-      },
-    },
-    "waterway-label"
+    "building-outline"
   );
   map.addLayer(
     {
@@ -322,7 +348,7 @@ map.on("load", function () {
         "fill-opacity": 0
       },
     },
-    "waterway-label"
+    "upzonings"
   );
 
   // setup the instance, pass callback functions

@@ -115,7 +115,9 @@ body {
   }
   .light {
     color: #444;
-    background-color: #fafafa;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 14px 0 rgba(0, 0, 0, .10), 0 5px 5.5px 0 rgba(0, 0, 0, .08);
   }
   .dark {
     color: #fafafa;
