@@ -63,7 +63,7 @@ let divChapter4 =
   '</div>';
 
 let divChapter5 =
-  '<div class="p-6"><p class="fort-font text-left text-base">Voluntary Cleanup Program</p>' +
+  '<div class="p-6 max-w-3xl mx-auto"><p class="fort-font text-left text-base mt-5">Voluntary Cleanup Program</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">Announced in Started in 2007; launched in 2009.</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">Defined as “chronically vacant or underutilized contaminated land” that inhibits development due to costs of cleanup and liability.</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">Brownfields can contain a wide variety of heavy metals, organic solvents, and other pollutants that remain a legacy of past industrial land uses and lax pollution management practices that predate modern standards for environmental protection. If left abandoned, these properties are a source of heightened public exposure to environmental toxins for our most disadvantaged citizens.</p>' +
@@ -75,7 +75,7 @@ let divChapter5 =
   '<p class="neue-font text-left leading-relaxed text-base mt-5">In order to encourage development in disadvantaged areas (that might be less likely to return profit to investors/developers, OER offers bonus grants to for- profit and nonprofit developers for projects that would in disadvantaged areas that provide public benefits such as open space, affordable housing, etc. These are known as “Preferred Community Development” projects.</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">However, real estate speculation, an important part of the gentrification process, is premised on investing in areas where property values are low, or “disadvantaged”. And almost any redevelopment project in a disadvantaged area can be framed as providing community benefits.</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">So there is very little incentive for private developers to invest in areas where real estate speculation is not underway.</p>' +
-  '<p class="neue-font text-left leading-relaxed text-base mt-5">In those neighborhoods where developers are less likely to return a profit, this mechanism for cleaning up contaminated properties does not really work. So, cleanups are unevenly distributed across the city, as shown on the map.</p>' +
+  '<p class="neue-font text-left leading-relaxed text-base mt-5 mb-5">In those neighborhoods where developers are less likely to return a profit, this mechanism for cleaning up contaminated properties does not really work. So, cleanups are unevenly distributed across the city, as shown on the map.</p>' +
   '</div>';
 
   let divChapter6 =
