@@ -115,6 +115,17 @@ let divChapter5 =
   '<svg class="inline-block align-middle mt-1" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">E-Designated sites</p>' +
   '</div>';
 
+  let divChapter9 =
+  '<div class="p-6"><p class="fort-font text-left text-base">Gentrification Index</p>' +
+  '<p class="neue-font text-left leading-relaxed text-base mt-5">Something about the gentrification index...</p>' +
+  '<p class="neue-font text-left leading-relaxed text-base mt-5">Gentrification scores (0 - 1)</p>' +
+  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width="0" fill="#ffe6e6" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">0 - 0.2</p><br>' +
+  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width="0" fill="#ffbfbf" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">0.2 - 0.5</p><br>' +
+  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width="0" fill="#ff8080" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">0.5 - 0.6</p><br>' +
+  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width="0" fill="#ff4040" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">0.6 - 0.7</p><br>' +
+  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width="0" fill="#ff4040" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">> 0.7</p>' +
+  '</div>';
+
 var config = {
   style: "mapbox://styles/jfs2118/cl1z1wypf002i14pcm2b34w8y",
   accessToken:
@@ -568,5 +579,58 @@ var config = {
       onChapterExit: [
       ],
     },
+    {
+      id: "gentrification",
+      alignment: "center",
+      hidden: false,
+      title: "",
+      image: "",
+      description: "",
+      chapterDiv: divChapter9,
+      location: {
+        center: [-73.96, 40.7],
+        zoom: 10,
+        zoomSmall: 9,
+        pitch: 0,
+        bearing: 0,
+    },
+    mapAnimation: "flyTo",
+    rotateAnimation: false,
+    callback: "",
+    onChapterEnter: [
+      {
+        layer: "nyc",
+        opacity: 1,
+        duration: 300,
+      },
+      {
+        layer: "eDesignations",
+        opacity: 0,
+        duration: 300,
+      },
+      {
+          layer: "gentrificationIndex",
+          opacity: 1,
+          duration: 300
+      },
+      {
+          layer: "upzonings",
+          opacity: 0,
+          duration: 300
+      },
+      {
+          layer: "cleanupSites",
+          opacity: 0,
+          duration: 300
+      },
+      {
+          layer: "upzoningsAdmin",
+          opacity: 0,
+          duration: 300
+      },
+    ],
+    onChapterExit: [
+    ],
+  },
   ],
 };
