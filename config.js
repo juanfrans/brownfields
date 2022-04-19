@@ -165,7 +165,7 @@ var config = {
   chapters: [
     {
         id: "eDesignations",
-        alignment: "center",
+        alignment: "left",
         hidden: false,
         title: "",
         image: "",
@@ -228,7 +228,7 @@ var config = {
     },
     {
         id: "upzoning",
-        alignment: "center",
+        alignment: "left",
         hidden: false,
         title: "",
         image: "",
@@ -286,7 +286,7 @@ var config = {
     },
     {
       id: "upzoning2",
-      alignment: "center",
+      alignment: "left",
       hidden: false,
       title: "",
       image: "",
@@ -344,7 +344,7 @@ var config = {
   },
     {
         id: "upzoningAdmin",
-        alignment: "center",
+        alignment: "left",
         hidden: false,
         title: "",
         image: "",
@@ -402,7 +402,7 @@ var config = {
     },
     {
       id: "upzoningAdmin2",
-      alignment: "center",
+      alignment: "left",
       hidden: false,
       title: "",
       image: "",
@@ -460,7 +460,7 @@ var config = {
   },
     {
         id: "greenpoint",
-        alignment: "center",
+        alignment: "left",
         hidden: false,
         title: "",
         image: "",
@@ -518,7 +518,7 @@ var config = {
     },
     {
       id: "greenpoint2",
-      alignment: "center",
+      alignment: "left",
       hidden: false,
       title: "",
       image: "",
@@ -634,7 +634,7 @@ var config = {
     },
     {
         id: "eDesignationsGreenpoint",
-        alignment: "center",
+        alignment: "left",
         hidden: false,
         title: "",
         image: "",
@@ -697,7 +697,7 @@ var config = {
     },
     {
         id: "cleanupGreenpoint",
-        alignment: "center",
+        alignment: "left",
         hidden: false,
         title: "",
         image: "",
@@ -755,7 +755,7 @@ var config = {
     },
     {
         id: "cleanupPortRichmond",
-        alignment: "center",
+        alignment: "left",
         hidden: false,
         title: "",
         image: "",
@@ -813,7 +813,7 @@ var config = {
     },
     {
       id: "gentrification",
-      alignment: "center",
+      alignment: "left",
       hidden: false,
       title: "",
       image: "",
