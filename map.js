@@ -318,6 +318,7 @@ map.addLayer(
         type: "geojson",
         data: "data/upzonings.geojson"
       },
+      filter: ["<", "year_effec", 2014],
       paint: {
         "fill-color": ["step", ["get", "year_effec"],
           "#ffffff",
@@ -326,10 +327,24 @@ map.addLayer(
           2006,
           "#80b9db",
           2010,
-          "#3e8ec4",
-          2014,
-          "#ae5d7a",
+          "#3e8ec4"
       ],
+        "fill-opacity": 0
+      }
+    },
+    "building-outline"
+  );
+  map.addLayer(
+    {
+      id: "upzoningsAdminDeBlasio",
+      type: "fill",
+      source: {
+        type: "geojson",
+        data: "data/upzonings.geojson"
+      },
+      filter: [">", "year_effec", 2013],
+      paint: {
+        "fill-color": "#ae5d7a",
         "fill-opacity": 0
       }
     },
