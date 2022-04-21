@@ -215,6 +215,8 @@ map.addLayer(
     source: {
       type: "geojson",
       data: "data/nyc20.geojson",
+      attribution:
+          'Designed and built by <a href="https://juanfrans.com/" target="_blank">Juan Francisco Saldarriaga</a> at <a href="https://brown.columbia.edu/" target="_blank">The Brown Institute for Media Innovation</a>',
     },
     paint: {
       "fill-color": "#f7f7f7",

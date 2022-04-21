@@ -165,3 +165,19 @@ body {
     font-size: 1rem;
     font-family: monospace;
   }
+  .mapboxgl-ctrl-attrib-inner {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: hsl(0, 0%, 40%);
+  }
+  .mapboxgl-ctrl-attrib-inner a {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: hsl(0, 0%, 40%);
+  }
+  .mapboxgl-ctrl-attrib .mapbox-improve-map {
+    font-weight: 400;
+    font-size: 0.6rem;
+  }
