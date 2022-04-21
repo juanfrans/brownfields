@@ -246,7 +246,7 @@ map.addLayer(
         data: "data/oerCleanupSites.geojson",
       },
       paint: {
-        "circle-color": "#3fa078",
+        "circle-color": "#3EB8A7",
         "circle-stroke-width": 0.3,
         "circle-radius": [
           "interpolate",
@@ -267,6 +267,22 @@ map.addLayer(
   );
   map.addLayer(
     {
+      id: "cleanupSitesBIN",
+      type: "fill",
+      source: {
+        type: "geojson",
+        data: "data/cleanupSitesBin.geojson",
+      },
+      paint: {
+        "fill-color": "#3EB8A7",
+        "fill-opacity": 0,
+        "fill-outline-color": "#2B8074"
+      }
+    },
+    "road-simple"
+  );
+  map.addLayer(
+    {
       id: "eDesignations",
       type: "circle",
       source: {
@@ -277,7 +293,7 @@ map.addLayer(
         "circle-opacity": 0,
         "circle-stroke-opacity": 0,
         "circle-color": "#ff8500",
-        "circle-stroke-color": "#191919",
+        "circle-stroke-color": "#BF6300",
         "circle-stroke-width": 0.3,
         "circle-radius": [
           "interpolate",
@@ -292,7 +308,23 @@ map.addLayer(
         ],
       },
     },
-    "cleanupSites"
+    "waterway-label"
+  );
+  map.addLayer(
+    {
+      id: "eDesignationsBBL",
+      type: "fill",
+      source: {
+        type: "geojson",
+        data: "data/eDesignationsBBL.geojson",
+      },
+      paint: {
+        "fill-color": "#ff8500",
+        "fill-opacity": 0,
+        "fill-outline-color": "#BF6300"
+      },
+    },
+    "cleanupSitesBIN"
   );
   map.addLayer(
     {

@@ -104,15 +104,15 @@ let divChapter5 =
   '<p class="neue-font text-left leading-relaxed text-base mt-5">Approximately ?? e-designated sites.</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">By 2017, total VCP sites at or near completion = 23.</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">The map shows the location of e-designated properties in Greenpoint.</p>' +
-  '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">E-Designated sites</p>' +
+  '<svg class="inline-block align-middle mt-5" height="16" width="16"><<rect x="1" y="1" width="14" height="14" stroke="#BF6300" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">E-Designated sites</p>' +
   '</div>';
 
   let divChapter7 =
   '<div class="p-6"><p class="fort-font text-left text-base">Cleaning Up Greenpoint - Voluntary Cleanup Sites</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">This map shows the location of redeveloped sites that were enrolled in the Voluntary Cleanup Program. All have a completed or near-completed status</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">Defined as “chronically vacant or underutilized contaminated land” that inhibits development due to costs of cleanup and liability.</p>' +
-  '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Voluntary cleanup sites</p><br>' +
-  '<svg class="inline-block align-middle mt-1" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">E-Designated sites</p>' +
+  '<svg class="inline-block align-middle mt-5" height="16" width="16"><<rect x="1" y="1" width="14" height="14" stroke="#2B8074" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Voluntary cleanup sites</p><br>' +
+  '<svg class="inline-block align-middle mt-1" height="16" width="16"><<rect x="1" y="1" width="14" height="14" stroke="#BF6300" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">E-Designated sites</p>' +
   '</div>';
 
   let divChapter8 =
@@ -129,8 +129,8 @@ let divChapter5 =
     '<li>26% are foreign born (although this number is probably significantly higher)</li></ul></p>' +
     '<p class="neue-font text-left leading-relaxed text-base mt-5">Approx. 87 E-designated sites in one small area (approx. ½ square mile) - see below map</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">By 2017, total VCP sites at or near completion = 1</p>' +
-  '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Voluntary cleanup sites</p><br>' +
-  '<svg class="inline-block align-middle mt-1" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">E-Designated sites</p>' +
+  '<svg class="inline-block align-middle mt-5" height="16" width="16"><<rect x="1" y="1" width="14" height="14" stroke="#2B8074" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Voluntary cleanup sites</p><br>' +
+  '<svg class="inline-block align-middle mt-1" height="16" width="16"><<rect x="1" y="1" width="14" height="14" stroke="#BF6300" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">E-Designated sites</p>' +
   '</div>';
 
   let divChapter9 =
@@ -217,6 +217,16 @@ var config = {
           opacity: 0,
           duration: 300
         },
+        {
+          layer: "cleanupSitesBIN",
+          opacity: 0,
+          duration: 300
+        },
+        {
+          layer: "eDesignationsBBL",
+          opacity: 0,
+          duration: 300
+        }
       ],
       onChapterExit: [
         {
@@ -280,6 +290,16 @@ var config = {
           opacity: 0,
           duration: 300
         },
+        {
+          layer: "cleanupSitesBIN",
+          opacity: 0,
+          duration: 300
+        },
+        {
+          layer: "eDesignationsBBL",
+          opacity: 0,
+          duration: 300
+        }
       ],
       onChapterExit: [
       ],
@@ -338,6 +358,16 @@ var config = {
         opacity: 0,
         duration: 300
       },
+      {
+        layer: "cleanupSitesBIN",
+        opacity: 0,
+        duration: 300
+      },
+      {
+        layer: "eDesignationsBBL",
+        opacity: 0,
+        duration: 300
+      }
     ],
     onChapterExit: [
     ],
@@ -396,6 +426,16 @@ var config = {
           opacity: 0,
           duration: 300
         },
+        {
+          layer: "cleanupSitesBIN",
+          opacity: 0,
+          duration: 300
+        },
+        {
+          layer: "eDesignationsBBL",
+          opacity: 0,
+          duration: 300
+        }
       ],
       onChapterExit: [
       ],
@@ -454,6 +494,16 @@ var config = {
         opacity: 1,
         duration: 300
       },
+      {
+        layer: "cleanupSitesBIN",
+        opacity: 0,
+        duration: 300
+      },
+      {
+        layer: "eDesignationsBBL",
+        opacity: 0,
+        duration: 300
+      }
     ],
     onChapterExit: [
     ],
@@ -512,6 +562,16 @@ var config = {
           opacity: 1,
           duration: 300
         },
+        {
+          layer: "cleanupSitesBIN",
+          opacity: 0,
+          duration: 300
+        },
+        {
+          layer: "eDesignationsBBL",
+          opacity: 0,
+          duration: 300
+        }
       ],
       onChapterExit: [
       ],
@@ -570,6 +630,16 @@ var config = {
         opacity: 1,
         duration: 300
       },
+      {
+        layer: "cleanupSitesBIN",
+        opacity: 0,
+        duration: 300
+      },
+      {
+        layer: "eDesignationsBBL",
+        opacity: 0,
+        duration: 300
+      }
     ],
     onChapterExit: [
     ],
@@ -628,6 +698,16 @@ var config = {
           opacity: 0,
           duration: 300
         },
+        {
+          layer: "cleanupSitesBIN",
+          opacity: 0,
+          duration: 300
+        },
+        {
+          layer: "eDesignationsBBL",
+          opacity: 0,
+          duration: 300
+        }
       ],
       onChapterExit: [
       ],
@@ -658,7 +738,7 @@ var config = {
         },
         {
           layer: "eDesignations",
-          opacity: 1,
+          opacity: 0,
           duration: 300,
         },
         {
@@ -686,6 +766,16 @@ var config = {
           opacity: 0,
           duration: 300
         },
+        {
+          layer: "cleanupSitesBIN",
+          opacity: 0,
+          duration: 300
+        },
+        {
+          layer: "eDesignationsBBL",
+          opacity: 1,
+          duration: 300
+        }
       ],
       onChapterExit: [
         {
@@ -721,7 +811,7 @@ var config = {
         },
         {
           layer: "eDesignations",
-          opacity: 1,
+          opacity: 0,
           duration: 300,
         },
         {
@@ -736,7 +826,7 @@ var config = {
         },
         {
             layer: "cleanupSites",
-            opacity: 1,
+            opacity: 0,
             duration: 300
         },
         {
@@ -749,6 +839,16 @@ var config = {
           opacity: 0,
           duration: 300
         },
+        {
+          layer: "cleanupSitesBIN",
+          opacity: 1,
+          duration: 300
+        },
+        {
+          layer: "eDesignationsBBL",
+          opacity: 1,
+          duration: 300
+        }
       ],
       onChapterExit: [
       ],
@@ -779,7 +879,7 @@ var config = {
         },
         {
           layer: "eDesignations",
-          opacity: 1,
+          opacity: 0,
           duration: 300,
         },
         {
@@ -794,7 +894,7 @@ var config = {
         },
         {
             layer: "cleanupSites",
-            opacity: 1,
+            opacity: 0,
             duration: 300
         },
         {
@@ -807,6 +907,16 @@ var config = {
           opacity: 0,
           duration: 300
         },
+        {
+          layer: "cleanupSitesBIN",
+          opacity: 1,
+          duration: 300
+        },
+        {
+          layer: "eDesignationsBBL",
+          opacity: 1,
+          duration: 300
+        }
       ],
       onChapterExit: [
       ],
@@ -865,6 +975,16 @@ var config = {
         opacity: 0,
         duration: 300
       },
+      {
+        layer: "cleanupSitesBIN",
+        opacity: 0,
+        duration: 300
+      },
+      {
+        layer: "eDesignationsBBL",
+        opacity: 0,
+        duration: 300
+      }
     ],
     onChapterExit: [
     ],

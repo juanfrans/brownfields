@@ -5,7 +5,5 @@ Repository for the development site of the Brownfields Cleanup story
 TODO:
 
 * Cleanup upzoning file
-* Join e-designations to lots via BBL
-* Join cleanup sites to lots via BBL
 * Add building footprint file for Greenpoint
-* Change center of the map to account for feature placement
+* Add missing BBLs from cleanup and edesignations (?)
