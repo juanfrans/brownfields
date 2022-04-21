@@ -271,7 +271,7 @@ map.addLayer(
       type: "fill",
       source: {
         type: "geojson",
-        data: "data/cleanupSitesBin.geojson",
+        data: "data/cleanupSitesBIN.geojson",
       },
       paint: {
         "fill-color": "#3EB8A7",
