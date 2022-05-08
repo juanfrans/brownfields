@@ -208,6 +208,16 @@ map.on("load", function () {
 //     if (error) throw error;
 //     map.addImage("lineIcon", image);
 //   });
+map.addSource('eHeatmap', {
+  'type': 'image',
+  'url': 'data/eHeatmap.png',
+  'coordinates': [
+  [-74.257113635, 40.915485758],
+  [-73.699378802, 40.915485758],
+  [-73.699378802, 40.496109055],
+  [-74.257113635, 40.496109055]
+  ]
+  });
 map.addLayer(
   {
     id: "nyc_land",
@@ -311,6 +321,17 @@ map.addLayer(
       },
     },
     "waterway-label"
+  );
+  map.addLayer({
+    id: 'radar-layer',
+    'type': 'raster',
+    'source': 'eHeatmap',
+    'paint': {
+    'raster-fade-duration': 0,
+    'raster-opacity': 0.8
+    }
+  },
+  "nyc"
   );
   map.addLayer(
     {
