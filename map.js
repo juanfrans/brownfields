@@ -204,10 +204,6 @@ map.on("load", function () {
       },
     });
   }
-//   map.loadImage("./img/lineIcon.png", function (error, image) {
-//     if (error) throw error;
-//     map.addImage("lineIcon", image);
-//   });
 map.addSource('eHeatmap', {
   'type': 'image',
   'url': 'data/eHeatmap.png',
@@ -275,7 +271,7 @@ map.addLayer(
         "circle-stroke-opacity": 0
       }
     },
-    "nyc"
+    "waterway-label"
   );
   map.addLayer(
     {
@@ -365,46 +361,6 @@ map.addLayer(
     },
     "eDesignations"
   );
-  // map.addLayer(
-  //   {
-  //     id: "upzoningsAdmin",
-  //     type: "fill",
-  //     source: {
-  //       type: "geojson",
-  //       data: "data/upzonings.geojson"
-  //     },
-  //     filter: ["<", "year_effec", 2014],
-  //     paint: {
-  //       "fill-color": ["step", ["get", "year_effec"],
-  //         "#ffffff",
-  //         2002, 
-  //         "#bdd9f5",
-  //         2006,
-  //         "#80b9db",
-  //         2010,
-  //         "#3e8ec4"
-  //     ],
-  //       "fill-opacity": 0
-  //     }
-  //   },
-  //   "building-outline"
-  // );
-  // map.addLayer(
-  //   {
-  //     id: "upzoningsAdminDeBlasio",
-  //     type: "fill",
-  //     source: {
-  //       type: "geojson",
-  //       data: "data/upzonings.geojson"
-  //     },
-  //     filter: [">", "year_effec", 2013],
-  //     paint: {
-  //       "fill-color": "#ae5d7a",
-  //       "fill-opacity": 0
-  //     }
-  //   },
-  //   "building-outline"
-  // );
   map.addLayer(
     {
       id: "gentrificationIndex",
@@ -431,7 +387,7 @@ map.addLayer(
         "fill-opacity": 0
       },
     },
-    "upzonings"
+    "nyc"
   );
 
   // setup the instance, pass callback functions

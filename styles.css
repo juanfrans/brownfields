@@ -19,10 +19,63 @@ body {
     position: fixed;
     z-index: -5;
   }
+
+  .centered {
+    width: 33vw;
+    margin: 0 auto;
+  }
+  .lefty {
+    width: 33vw;
+    margin-left: 5vw;
+  }
+  .righty {
+    width: 33vw;
+    margin-left: 62vw;
+  }
+  .fully {
+    width: 100%;
+    margin: auto;
+  }
+  .light {
+    color: #444;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 14px 0 rgba(0, 0, 0, .10), 0 5px 5.5px 0 rgba(0, 0, 0, .08);
+  }
+  .dark {
+    color: #fafafa;
+    background-color: #444;
+  }
+  .step {
+    padding-bottom: 150vh;
+    opacity: 1;
+  }
+  .step.active {
+    opacity: 1;
+  }
+  .step div {
+    /* padding: 25px 50px;
+    line-height: 25px;
+    font-size: 13px; */
+  }
+  .step img {
+    /* width: 100%; */
+  }
+  @media (max-width: 750px) {
+    .centered,
+    .lefty,
+    .righty,
+    .fully {
+      width: 90vw;
+      margin: 0 auto;
+    }
+  }
+
   #header {
     margin: auto;
     min-height: 100vh;
     padding: 2vh 2vh 5vh 2vh;
+    /* box-shadow: none; */
   }
   #features {
     padding-top: 150vh;
@@ -97,65 +150,13 @@ body {
   /* a, a:hover, a:visited {
     color: #e96138;
   } */
-  .centered {
-    width: 33vw;
-    margin: 0 auto;
-  }
-  .lefty {
-    width: 33vw;
-    margin-left: 5vw;
-  }
-  .righty {
-    width: 33vw;
-    margin-left: 62vw;
-  }
-  .fully {
-    width: 100%;
-    margin: auto;
-  }
-  .light {
-    color: #444;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 3px 14px 0 rgba(0, 0, 0, .10), 0 5px 5.5px 0 rgba(0, 0, 0, .08);
-  }
-  .dark {
-    color: #fafafa;
-    background-color: #444;
-  }
-  .step {
-    padding-bottom: 150vh;
-    opacity: 1;
-  }
-  .step.active {
-    opacity: 1;
-  }
-  .step div {
-    /* padding: 25px 50px;
-    line-height: 25px;
-    font-size: 13px; */
-  }
-  .step img {
-    /* width: 100%; */
-  }
-  
-  @media (max-width: 750px) {
-    .centered,
-    .lefty,
-    .righty,
-    .fully {
-      width: 90vw;
-      margin: 0 auto;
-    }
-  }
   
   /* Fix issue on mobile browser where scroll breaks  */
   .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
   .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
     touch-action: unset;
   }
-  
-  
+
   #home-link {
     position: fixed;
     top: 1rem;

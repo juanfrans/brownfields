@@ -27,11 +27,12 @@ let divChapter2a =
   '</div>';
 
 let divChapter2b =
-  '<div class="p-6"><p class="neue-font text-left leading-relaxed text-base mt-5">Although redevelopment can happen with or without upzoning, by allowing for larger, new developments, historically, upzoning has invited private developers to build multi-family buildings targeted to more affluent residents.</p>' +
+  '<div class="p-6"><p class="fort-font text-left text-base">Something about the OER cleanup sites for the whole city</p>' +
+  '<div class="p-6"><p class="neue-font text-left leading-relaxed text-base mt-5">Placeholder text... Although redevelopment can happen with or without upzoning, by allowing for larger, new developments, historically, upzoning has invited private developers to build multi-family buildings targeted to more affluent residents.</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">Because upzoning is known to encourage new development, starting in 1987, new developments in upzoned areas could receive density bonuses if they preserved or rehabilitated affordable housing. This is known as the “Voluntary Inclusionary Housing” program.</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">Our map shows how upzonings correlated with our gentrification index (based on 5 variables - increases in rents, incomes, education levels, and numbers of 20-34 year old and decreases in non-white populations), during the years 20020-2018.</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">It also includes areas where along with greater density, zoning uses change (i.e., from manufacturing to residential)</p>' +
-  '<svg class="inline-block align-middle mt-5" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width=".5" fill="#d8d8d8" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Upzoned areas</p><br>' +
+  '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Voluntary cleanup sites</p><br>' +
   '</div>';
 
 let divChapter3a =
@@ -133,9 +134,24 @@ let divChapter5 =
   '<svg class="inline-block align-middle mt-1" height="16" width="16"><<rect x="1" y="1" width="14" height="14" stroke="#BF6300" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">E-Designated sites</p>' +
   '</div>';
 
-  let divChapter9 =
-  '<div class="p-6"><p class="fort-font text-left text-base">Gentrification Index</p>' +
-  '<p class="neue-font text-left leading-relaxed text-base mt-5">Something about the gentrification index...</p>' +
+  let divChapter9a =
+  '<div class="p-6"><p class="fort-font text-left text-base">Gentrification</p>' +
+  '<p class="neue-font text-left leading-relaxed text-base mt-5">A recently published index of gentrification* is presented here. This is based on a composite score that increases with increasing relative change of key variables (median family income, median rent and proportions of non-Hispanic white, 20-34-year-olds and adults with a 4-year college degree) computed from the years 2000 to 2019 for NYC census tracts that are spatially normalized to the year 2010.</p>' +
+  '<p class="neue-font text-left leading-relaxed text-base mt-5">These community-level input variables were chosen to represent the nuanced and processual nature of the socioeconomic and demographic shifts associated with gentrification.</p>' +
+  '<p class="neue-font text-left leading-relaxed text-base mt-5">Gentrification scores (0 - 1)</p>' +
+  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width="0" fill="#ffe6e6" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">0 - 0.2</p><br>' +
+  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width="0" fill="#ffbfbf" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">0.2 - 0.5</p><br>' +
+  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width="0" fill="#ff8080" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">0.5 - 0.6</p><br>' +
+  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width="0" fill="#ff4040" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">0.6 - 0.7</p><br>' +
+  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width="0" fill="#ff4040" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">> 0.7</p>' +
+  '<p class="neue-font text-left leading-relaxed text-sm italic mt-5">*<a class="underline underline-offset-2" href="https://www.tandfonline.com/doi/full/10.1080/13658816.2021.1931873" target="_blank">A small area index of gentrification, applied to New York City</a>.</p>' +
+  '</div>';
+
+  let divChapter9b =
+  '<div class="p-6"><p class="fort-font text-left text-base">Gentrification and VCP Sites</p>' +
+  '<p class="neue-font text-left leading-relaxed text-base mt-5">A recently published index of gentrification* is presented here. This is based on a composite score that increases with increasing relative change of key variables (median family income, median rent and proportions of non-Hispanic white, 20-34-year-olds and adults with a 4-year college degree) computed from the years 2000 to 2019 for NYC census tracts that are spatially normalized to the year 2010.</p>' +
+  '<p class="neue-font text-left leading-relaxed text-base mt-5">These community-level input variables were chosen to represent the nuanced and processual nature of the socioeconomic and demographic shifts associated with gentrification.</p>' +
+  '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Voluntary cleanup sites</p><br>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">Gentrification scores (0 - 1)</p>' +
   '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width="0" fill="#ffe6e6" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">0 - 0.2</p><br>' +
   '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width="0" fill="#ffbfbf" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">0.2 - 0.5</p><br>' +
@@ -188,6 +204,11 @@ var config = {
           duration: 300,
         },
         {
+          layer: "eHeatmap",
+          opacity: 1,
+          duration: 300,
+        },
+        {
           layer: "eDesignations",
           opacity: 1,
           duration: 300,
@@ -219,11 +240,6 @@ var config = {
         }
       ],
       onChapterExit: [
-        {
-          layer: "eDesignations",
-          opacity: 0,
-          duration: 300,
-        },
       ],
     },
     {
@@ -247,6 +263,11 @@ var config = {
       onChapterEnter: [
         {
           layer: "nyc",
+          opacity: 1,
+          duration: 300,
+        },
+        {
+          layer: "eHeatmap",
           opacity: 1,
           duration: 300,
         },
@@ -285,7 +306,7 @@ var config = {
       ],
     },
     {
-      id: "upzoning2",
+      id: "oerCity",
       alignment: "left",
       hidden: false,
       title: "",
@@ -309,6 +330,11 @@ var config = {
         duration: 300,
       },
       {
+        layer: "eHeatmap",
+        opacity: 1,
+        duration: 300,
+      },
+      {
         layer: "eDesignations",
         opacity: 0,
         duration: 300,
@@ -320,12 +346,12 @@ var config = {
       },
       {
           layer: "upzonings",
-          opacity: 1,
+          opacity: 0,
           duration: 300
       },
       {
           layer: "cleanupSites",
-          opacity: 0,
+          opacity: 1,
           duration: 300
       },
       {
@@ -364,6 +390,11 @@ var config = {
         {
           layer: "nyc",
           opacity: 1,
+          duration: 300,
+        },
+        {
+          layer: "eHeatmap",
+          opacity: 0,
           duration: 300,
         },
         {
@@ -425,6 +456,11 @@ var config = {
           duration: 300,
         },
         {
+          layer: "eHeatmap",
+          opacity: 0,
+          duration: 300,
+        },
+        {
           layer: "eDesignations",
           opacity: 0,
           duration: 300,
@@ -456,11 +492,6 @@ var config = {
         }
       ],
       onChapterExit: [
-        {
-          layer: "gentrificationIndex",
-          opacity: 0,
-          duration: 300,
-        },
       ],
     },
     {
@@ -485,6 +516,11 @@ var config = {
         {
           layer: "nyc",
           opacity: 1,
+          duration: 300,
+        },
+        {
+          layer: "eHeatmap",
+          opacity: 0,
           duration: 300,
         },
         {
@@ -530,9 +566,9 @@ var config = {
         description: "",
         chapterDiv: divChapter8,
         location: {
-          center: [-74.1425, 40.637],
-          zoom: 15.5,
-          zoomSmall: 15,
+          center: [-74.1425, 40.63],
+          zoom: 13.5,
+          zoomSmall: 13,
           pitch: 0,
           bearing: 0,
       },
@@ -543,6 +579,11 @@ var config = {
         {
           layer: "nyc",
           opacity: 1,
+          duration: 300,
+        },
+        {
+          layer: "eHeatmap",
+          opacity: 0,
           duration: 300,
         },
         {
@@ -586,7 +627,7 @@ var config = {
       title: "",
       image: "",
       description: "",
-      chapterDiv: divChapter9,
+      chapterDiv: divChapter9a,
       location: {
         center: [-73.999, 40.7],
         zoom: 10,
@@ -604,13 +645,18 @@ var config = {
         duration: 300,
       },
       {
+        layer: "eHeatmap",
+        opacity: 0,
+        duration: 300,
+      },
+      {
         layer: "eDesignations",
         opacity: 0,
         duration: 300,
       },
       {
           layer: "gentrificationIndex",
-          opacity: 1,
+          opacity: 0.8,
           duration: 300
       },
       {
@@ -637,5 +683,68 @@ var config = {
     onChapterExit: [
     ],
   },
+  {
+    id: "gentrificationCleanup",
+    alignment: "left",
+    hidden: false,
+    title: "",
+    image: "",
+    description: "",
+    chapterDiv: divChapter9b,
+    location: {
+      center: [-73.999, 40.7],
+      zoom: 10,
+      zoomSmall: 9,
+      pitch: 0,
+      bearing: 0,
+  },
+  mapAnimation: "flyTo",
+  rotateAnimation: false,
+  callback: "",
+  onChapterEnter: [
+    {
+      layer: "nyc",
+      opacity: 1,
+      duration: 300,
+    },
+    {
+      layer: "eHeatmap",
+      opacity: 0,
+      duration: 300,
+    },
+    {
+      layer: "eDesignations",
+      opacity: 0,
+      duration: 300,
+    },
+    {
+        layer: "gentrificationIndex",
+        opacity: 0.8,
+        duration: 300
+    },
+    {
+        layer: "upzonings",
+        opacity: 0,
+        duration: 300
+    },
+    {
+        layer: "cleanupSites",
+        opacity: 1,
+        duration: 300
+    },
+    {
+      layer: "cleanupSitesBIN",
+      opacity: 0,
+      duration: 300
+    },
+    {
+      layer: "eDesignationsBBL",
+      opacity: 0,
+      duration: 300
+    }
+  ],
+  onChapterExit: [
+  ],
+},
   ],
 };
