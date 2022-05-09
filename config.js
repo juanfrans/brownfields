@@ -208,16 +208,6 @@ var config = {
             duration: 300
         },
         {
-            layer: "upzoningsAdmin",
-            opacity: 0,
-            duration: 300
-        },
-        {
-          layer: "upzoningsAdminDeBlasio",
-          opacity: 0,
-          duration: 300
-        },
-        {
           layer: "cleanupSitesBIN",
           opacity: 0,
           duration: 300
@@ -281,16 +271,6 @@ var config = {
             duration: 300
         },
         {
-            layer: "upzoningsAdmin",
-            opacity: 0,
-            duration: 300
-        },
-        {
-          layer: "upzoningsAdminDeBlasio",
-          opacity: 0,
-          duration: 300
-        },
-        {
           layer: "cleanupSitesBIN",
           opacity: 0,
           duration: 300
@@ -347,288 +327,6 @@ var config = {
           layer: "cleanupSites",
           opacity: 0,
           duration: 300
-      },
-      {
-          layer: "upzoningsAdmin",
-          opacity: 0,
-          duration: 300
-      },
-      {
-        layer: "upzoningsAdminDeBlasio",
-        opacity: 0,
-        duration: 300
-      },
-      {
-        layer: "cleanupSitesBIN",
-        opacity: 0,
-        duration: 300
-      },
-      {
-        layer: "eDesignationsBBL",
-        opacity: 0,
-        duration: 300
-      }
-    ],
-    onChapterExit: [
-    ],
-  },
-    {
-        id: "upzoningAdmin",
-        alignment: "left",
-        hidden: false,
-        title: "",
-        image: "",
-        description: "",
-        chapterDiv: divChapter3a,
-        location: {
-          center: [-73.999, 40.7],
-          zoom: 10,
-          zoomSmall: 9,
-          pitch: 0,
-          bearing: 0,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [
-        {
-          layer: "nyc",
-          opacity: 1,
-          duration: 300,
-        },
-        {
-          layer: "eDesignations",
-          opacity: 0,
-          duration: 300,
-        },
-        {
-            layer: "gentrificationIndex",
-            opacity: 0,
-            duration: 300
-        },
-        {
-            layer: "upzonings",
-            opacity: 0,
-            duration: 300
-        },
-        {
-            layer: "cleanupSites",
-            opacity: 0,
-            duration: 300
-        },
-        {
-            layer: "upzoningsAdmin",
-            opacity: 1,
-            duration: 300
-        },
-        {
-          layer: "upzoningsAdminDeBlasio",
-          opacity: 0,
-          duration: 300
-        },
-        {
-          layer: "cleanupSitesBIN",
-          opacity: 0,
-          duration: 300
-        },
-        {
-          layer: "eDesignationsBBL",
-          opacity: 0,
-          duration: 300
-        }
-      ],
-      onChapterExit: [
-      ],
-    },
-    {
-      id: "upzoningAdmin2",
-      alignment: "left",
-      hidden: false,
-      title: "",
-      image: "",
-      description: "",
-      chapterDiv: divChapter3b,
-      location: {
-        center: [-73.999, 40.7],
-        zoom: 10,
-        zoomSmall: 9,
-        pitch: 0,
-        bearing: 0,
-    },
-    mapAnimation: "flyTo",
-    rotateAnimation: false,
-    callback: "",
-    onChapterEnter: [
-      {
-        layer: "nyc",
-        opacity: 1,
-        duration: 300,
-      },
-      {
-        layer: "eDesignations",
-        opacity: 0,
-        duration: 300,
-      },
-      {
-          layer: "gentrificationIndex",
-          opacity: 0,
-          duration: 300
-      },
-      {
-          layer: "upzonings",
-          opacity: 0,
-          duration: 300
-      },
-      {
-          layer: "cleanupSites",
-          opacity: 0,
-          duration: 300
-      },
-      {
-          layer: "upzoningsAdmin",
-          opacity: 0,
-          duration: 300
-      },
-      {
-        layer: "upzoningsAdminDeBlasio",
-        opacity: 1,
-        duration: 300
-      },
-      {
-        layer: "cleanupSitesBIN",
-        opacity: 0,
-        duration: 300
-      },
-      {
-        layer: "eDesignationsBBL",
-        opacity: 0,
-        duration: 300
-      }
-    ],
-    onChapterExit: [
-    ],
-  },
-    {
-        id: "greenpoint",
-        alignment: "left",
-        hidden: false,
-        title: "",
-        image: "",
-        description: "",
-        chapterDiv: divChapter4a,
-        location: {
-          center: [-73.96, 40.723],
-          zoom: 13.5,
-          zoomSmall: 13,
-          pitch: 0,
-          bearing: 0,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [
-        {
-          layer: "nyc",
-          opacity: 1,
-          duration: 300,
-        },
-        {
-          layer: "eDesignations",
-          opacity: 0,
-          duration: 300,
-        },
-        {
-            layer: "gentrificationIndex",
-            opacity: 0,
-            duration: 300
-        },
-        {
-            layer: "upzonings",
-            opacity: 0,
-            duration: 300
-        },
-        {
-            layer: "cleanupSites",
-            opacity: 0,
-            duration: 300
-        },
-        {
-            layer: "upzoningsAdmin",
-            opacity: 1,
-            duration: 300
-        },
-        {
-          layer: "upzoningsAdminDeBlasio",
-          opacity: 1,
-          duration: 300
-        },
-        {
-          layer: "cleanupSitesBIN",
-          opacity: 0,
-          duration: 300
-        },
-        {
-          layer: "eDesignationsBBL",
-          opacity: 0,
-          duration: 300
-        }
-      ],
-      onChapterExit: [
-      ],
-    },
-    {
-      id: "greenpoint2",
-      alignment: "left",
-      hidden: false,
-      title: "",
-      image: "",
-      description: "",
-      chapterDiv: divChapter4b,
-      location: {
-        center: [-73.96, 40.723],
-          zoom: 13.5,
-          zoomSmall: 13,
-        pitch: 0,
-        bearing: 0,
-    },
-    mapAnimation: "flyTo",
-    rotateAnimation: false,
-    callback: "",
-    onChapterEnter: [
-      {
-        layer: "nyc",
-        opacity: 1,
-        duration: 300,
-      },
-      {
-        layer: "eDesignations",
-        opacity: 0,
-        duration: 300,
-      },
-      {
-          layer: "gentrificationIndex",
-          opacity: 0,
-          duration: 300
-      },
-      {
-          layer: "upzonings",
-          opacity: 0,
-          duration: 300
-      },
-      {
-          layer: "cleanupSites",
-          opacity: 0,
-          duration: 300
-      },
-      {
-          layer: "upzoningsAdmin",
-          opacity: 1,
-          duration: 300
-      },
-      {
-        layer: "upzoningsAdminDeBlasio",
-        opacity: 1,
-        duration: 300
       },
       {
         layer: "cleanupSitesBIN",
@@ -689,16 +387,6 @@ var config = {
             duration: 300
         },
         {
-            layer: "upzoningsAdmin",
-            opacity: 0,
-            duration: 300
-        },
-        {
-          layer: "upzoningsAdminDeBlasio",
-          opacity: 0,
-          duration: 300
-        },
-        {
           layer: "cleanupSitesBIN",
           opacity: 0,
           duration: 300
@@ -755,16 +443,6 @@ var config = {
             layer: "cleanupSites",
             opacity: 0,
             duration: 300
-        },
-        {
-            layer: "upzoningsAdmin",
-            opacity: 0,
-            duration: 300
-        },
-        {
-          layer: "upzoningsAdminDeBlasio",
-          opacity: 0,
-          duration: 300
         },
         {
           layer: "cleanupSitesBIN",
@@ -830,16 +508,6 @@ var config = {
             duration: 300
         },
         {
-            layer: "upzoningsAdmin",
-            opacity: 0,
-            duration: 300
-        },
-        {
-          layer: "upzoningsAdminDeBlasio",
-          opacity: 0,
-          duration: 300
-        },
-        {
           layer: "cleanupSitesBIN",
           opacity: 1,
           duration: 300
@@ -898,16 +566,6 @@ var config = {
             duration: 300
         },
         {
-            layer: "upzoningsAdmin",
-            opacity: 0,
-            duration: 300
-        },
-        {
-          layer: "upzoningsAdminDeBlasio",
-          opacity: 0,
-          duration: 300
-        },
-        {
           layer: "cleanupSitesBIN",
           opacity: 1,
           duration: 300
@@ -964,16 +622,6 @@ var config = {
           layer: "cleanupSites",
           opacity: 0,
           duration: 300
-      },
-      {
-          layer: "upzoningsAdmin",
-          opacity: 0,
-          duration: 300
-      },
-      {
-        layer: "upzoningsAdminDeBlasio",
-        opacity: 0,
-        duration: 300
       },
       {
         layer: "cleanupSitesBIN",

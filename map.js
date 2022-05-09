@@ -175,14 +175,14 @@ if (config.showMarkers) {
 var scroller = scrollama();
 
 map.on("load", function () {
-  var layers = map.getStyle().layers;
-  for (var i = 0; i < layers.length; i++) {
-    console.log(layers[i].id);
-  if (layers[i].type === "symbol") {
-    firstSymbolId = layers[i].id;
-    // break;
-  }
-  }
+  // var layers = map.getStyle().layers;
+  // for (var i = 0; i < layers.length; i++) {
+  //   console.log(layers[i].id);
+  //   if (layers[i].type === "symbol") {
+  //     firstSymbolId = layers[i].id;
+  //     // break;
+  //   }
+  // }
   if (config.use3dTerrain) {
     map.addSource("mapbox-dem", {
       type: "raster-dem",
@@ -323,7 +323,7 @@ map.addLayer(
     "waterway-label"
   );
   map.addLayer({
-    id: 'radar-layer',
+    id: 'eHeatmap',
     'type': 'raster',
     'source': 'eHeatmap',
     'paint': {
@@ -365,46 +365,46 @@ map.addLayer(
     },
     "eDesignations"
   );
-  map.addLayer(
-    {
-      id: "upzoningsAdmin",
-      type: "fill",
-      source: {
-        type: "geojson",
-        data: "data/upzonings.geojson"
-      },
-      filter: ["<", "year_effec", 2014],
-      paint: {
-        "fill-color": ["step", ["get", "year_effec"],
-          "#ffffff",
-          2002, 
-          "#bdd9f5",
-          2006,
-          "#80b9db",
-          2010,
-          "#3e8ec4"
-      ],
-        "fill-opacity": 0
-      }
-    },
-    "building-outline"
-  );
-  map.addLayer(
-    {
-      id: "upzoningsAdminDeBlasio",
-      type: "fill",
-      source: {
-        type: "geojson",
-        data: "data/upzonings.geojson"
-      },
-      filter: [">", "year_effec", 2013],
-      paint: {
-        "fill-color": "#ae5d7a",
-        "fill-opacity": 0
-      }
-    },
-    "building-outline"
-  );
+  // map.addLayer(
+  //   {
+  //     id: "upzoningsAdmin",
+  //     type: "fill",
+  //     source: {
+  //       type: "geojson",
+  //       data: "data/upzonings.geojson"
+  //     },
+  //     filter: ["<", "year_effec", 2014],
+  //     paint: {
+  //       "fill-color": ["step", ["get", "year_effec"],
+  //         "#ffffff",
+  //         2002, 
+  //         "#bdd9f5",
+  //         2006,
+  //         "#80b9db",
+  //         2010,
+  //         "#3e8ec4"
+  //     ],
+  //       "fill-opacity": 0
+  //     }
+  //   },
+  //   "building-outline"
+  // );
+  // map.addLayer(
+  //   {
+  //     id: "upzoningsAdminDeBlasio",
+  //     type: "fill",
+  //     source: {
+  //       type: "geojson",
+  //       data: "data/upzonings.geojson"
+  //     },
+  //     filter: [">", "year_effec", 2013],
+  //     paint: {
+  //       "fill-color": "#ae5d7a",
+  //       "fill-opacity": 0
+  //     }
+  //   },
+  //   "building-outline"
+  // );
   map.addLayer(
     {
       id: "gentrificationIndex",
