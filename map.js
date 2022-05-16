@@ -389,6 +389,41 @@ map.addLayer(
     },
     "nyc"
   );
+  map.addLayer(
+    {
+      id: "stateCleanup",
+      type: "circle",
+      source: {
+        type: "geojson",
+        data: "data/stateCleanupSites.geojson",
+      },
+      paint: {
+        "circle-opacity": 0,
+        "circle-stroke-opacity": 0,
+        "circle-color": ['match', ['get', 'Program Type'],
+          'BCP', 'red',
+          'HW', 'blue',
+          'VCP', 'yellow',
+          'ERP', 'green',
+          'RCRA', 'orange',
+          'white'],
+        "circle-stroke-color": "#BF6300",
+        "circle-stroke-width": 0.3,
+        "circle-radius": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          2.5,
+          14,
+          4,
+          18,
+          12,
+        ],
+      },
+    },
+    "waterway-label"
+  );
 
   // setup the instance, pass callback functions
   scroller

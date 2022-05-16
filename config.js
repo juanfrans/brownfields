@@ -166,6 +166,16 @@ let divChapter5 =
   '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width="0" fill="#ff4040" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">> 0.7</p>' +
   '</div>';
 
+  let divChapter10 =
+  '<div class="p-6"><p class="fort-font text-left text-base">NY State Cleanup Sites</p>' +
+  '<p class="neue-font text-left leading-relaxed text-base mt-5">These are the sites from <a class="underline underline-offset-2" href="https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg" target="_blank">NY State cleanup programs</a>. The references are as follows:</p>' +
+  '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="red" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">State Superfund Program (BCP)</p><br>' +
+  '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="blue" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Brownfield Cleanup Program (HW)</p><br>' +
+  '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="yellow" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Voluntary Cleanup Program (VCP)</p><br>' +
+  '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="green" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Environmental Restoration Program (ERP)</p><br>' +
+  '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="orange" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Hazardous Waste Management Program (RCRA)</p><br>' +
+  '</div>';
+
 var config = {
   style: "mapbox://styles/jfs2118/cl1z1wypf002i14pcm2b34w8y",
   accessToken:
@@ -243,7 +253,12 @@ var config = {
           layer: "eDesignationsBBL",
           opacity: 0,
           duration: 300
-        }
+        },
+        {
+          layer: "stateCleanup",
+          opacity: 0,
+          duration: 300,
+        },
       ],
       onChapterExit: [
       ],
@@ -306,7 +321,12 @@ var config = {
           layer: "eDesignationsBBL",
           opacity: 0,
           duration: 300
-        }
+        },
+        {
+          layer: "stateCleanup",
+          opacity: 0,
+          duration: 300,
+        },
       ],
       onChapterExit: [
       ],
@@ -369,7 +389,12 @@ var config = {
         layer: "eDesignationsBBL",
         opacity: 0,
         duration: 300
-      }
+      },
+      {
+        layer: "stateCleanup",
+        opacity: 0,
+        duration: 300,
+      },
     ],
     onChapterExit: [
     ],
@@ -432,7 +457,12 @@ var config = {
           layer: "eDesignationsBBL",
           opacity: 0,
           duration: 300
-        }
+        },
+        {
+          layer: "stateCleanup",
+          opacity: 0,
+          duration: 300,
+        },
       ],
       onChapterExit: [
       ],
@@ -495,7 +525,12 @@ var config = {
           layer: "eDesignationsBBL",
           opacity: 1,
           duration: 300
-        }
+        },
+        {
+          layer: "stateCleanup",
+          opacity: 0,
+          duration: 300,
+        },
       ],
       onChapterExit: [
       ],
@@ -558,7 +593,12 @@ var config = {
           layer: "eDesignationsBBL",
           opacity: 1,
           duration: 300
-        }
+        },
+        {
+          layer: "stateCleanup",
+          opacity: 0,
+          duration: 300,
+        },
       ],
       onChapterExit: [
       ],
@@ -621,7 +661,12 @@ var config = {
           layer: "eDesignationsBBL",
           opacity: 1,
           duration: 300
-        }
+        },
+        {
+          layer: "stateCleanup",
+          opacity: 0,
+          duration: 300,
+        },
       ],
       onChapterExit: [
       ],
@@ -684,7 +729,12 @@ var config = {
         layer: "eDesignationsBBL",
         opacity: 0,
         duration: 300
-      }
+      },
+      {
+        layer: "stateCleanup",
+        opacity: 0,
+        duration: 300,
+      },
     ],
     onChapterExit: [
     ],
@@ -747,10 +797,83 @@ var config = {
       layer: "eDesignationsBBL",
       opacity: 0,
       duration: 300
-    }
+    },
+    {
+      layer: "stateCleanup",
+      opacity: 0,
+      duration: 300,
+    },
   ],
   onChapterExit: [
   ],
+},
+{
+  id: "stateCleanupSites",
+  alignment: "left",
+  hidden: false,
+  title: "",
+  image: "",
+  description: "",
+  chapterDiv: divChapter10,
+  location: {
+    center: [-73.999, 40.7],
+    zoom: 10,
+    zoomSmall: 9,
+    pitch: 0,
+    bearing: 0,
+},
+mapAnimation: "flyTo",
+rotateAnimation: false,
+callback: "",
+onChapterEnter: [
+  {
+    layer: "nyc",
+    opacity: 1,
+    duration: 300,
+  },
+  {
+    layer: "eHeatmap",
+    opacity: 0,
+    duration: 300,
+  },
+  {
+    layer: "eDesignations",
+    opacity: 0,
+    duration: 300,
+  },
+  {
+      layer: "gentrificationIndex",
+      opacity: 0,
+      duration: 300
+  },
+  {
+      layer: "upzonings",
+      opacity: 0,
+      duration: 300
+  },
+  {
+      layer: "cleanupSites",
+      opacity: 0,
+      duration: 300
+  },
+  {
+    layer: "cleanupSitesBIN",
+    opacity: 0,
+    duration: 300
+  },
+  {
+    layer: "eDesignationsBBL",
+    opacity: 0,
+    duration: 300
+  },
+  {
+    layer: "stateCleanup",
+    opacity: 1,
+    duration: 300,
+  },
+],
+onChapterExit: [
+],
 },
   ],
 };
