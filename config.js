@@ -114,7 +114,7 @@ let divChapter5 =
   '<p class="neue-font text-left leading-relaxed text-base mt-5">Defined as “chronically vacant or underutilized contaminated land” that inhibits development due to costs of cleanup and liability.</p>' +
   '<svg class="inline-block align-middle mt-5" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#2B8074" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Voluntary cleanup sites</p><br>' +
   '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#BF6300" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">E-Designated sites</p>' +
-  '<p class="neue-font text-left leading-relaxed text-base mt-5">Here are some demographic comparisons between <u class="underline-offset-4" style="text-decoration-color:#ff8500">Greenpoint</u> and <u class="underline-offset-4" style="text-decoration-color:#b2b2b2">New York City</u>:</p>' +
+  '<p class="neue-font text-left leading-relaxed text-base mt-5">Here are some demographic comparisons between <span class="bg-orange-400 px-1 rounded text-white">Greenpoint</span> and <span class="bg-slate-300 px-1 rounded">New York City</span>:</p>' +
   '<div class="grid gap-4 lg:grid-cols-2 lg:grid-rows-2 md:grid-cols-1 md:grid-rows-4 pt-4"><img class="pt-4" src="./images/youngGreenpoint.svg"><img class="pt-4" src="./images/collegeGreenpoint.svg">' +
   '<img class="pt-4" src="./images/nonWhiteGreenpoint.svg"><img class="pt-4" src="./images/mfiGreenpoint.svg"></div>' +
   '</div>';
@@ -135,7 +135,7 @@ let divChapter5 =
   '<p class="neue-font text-left leading-relaxed text-base mt-5">By 2017, total VCP sites at or near completion = 1</p>' +
   '<svg class="inline-block align-middle mt-5" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#2B8074" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Voluntary cleanup sites</p><br>' +
   '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#BF6300" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">E-Designated sites</p>' +
-  '<p class="neue-font text-left leading-relaxed text-base mt-5">Here are some demographic comparisons between <u class="underline-offset-4" style="text-decoration-color:#ff8500">Port Richmond</u> and <u class="underline-offset-4" style="text-decoration-color:#b2b2b2">New York City</u>:</p>' +
+  '<p class="neue-font text-left leading-relaxed text-base mt-5">Here are some demographic comparisons between <span class="bg-orange-400 px-1 rounded text-white">Port Richmond</span> and <span class="bg-slate-300 px-1 rounded">New York City</span>:</p>' +
   '<div class="grid gap-4 lg:grid-cols-2 lg:grid-rows-2 md:grid-cols-1 md:grid-rows-4 pt-4"><img class="pt-4" src="./images/youngPortRichmond.svg"><img class="pt-4" src="./images/collegePortRichmond.svg">' +
   '<img class="pt-4" src="./images/nonWhitePortRichmond.svg"><img class="pt-4" src="./images/mfiPortRichmond.svg"></div>' +
   '</div>';
