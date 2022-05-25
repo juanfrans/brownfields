@@ -324,7 +324,7 @@ map.addLayer(
     'source': 'eHeatmap',
     'paint': {
     'raster-fade-duration': 0,
-    'raster-opacity': 0.8
+    'raster-opacity': 0.5
     }
   },
   "nyc"
@@ -359,7 +359,7 @@ map.addLayer(
         "fill-outline-color": "black"
       }
     },
-    "eDesignations"
+    "cleanupSites"
   );
   map.addLayer(
     {
@@ -387,7 +387,7 @@ map.addLayer(
         "fill-opacity": 0
       },
     },
-    "nyc"
+    "upzonings"
   );
   map.addLayer(
     {
@@ -420,6 +420,23 @@ map.addLayer(
           18,
           12,
         ],
+      },
+    },
+    "waterway-label"
+  );
+  map.addLayer(
+    {
+      id: "selectedNtas",
+      type: "line",
+      source: {
+        type: "geojson",
+        data: "data/selectedNTAs.geojson",
+      },
+      paint: {
+        "line-opacity": 0,
+        // "line-color": "#0ea5e9",
+        "line-color": "black",
+        "line-width": 1.5
       },
     },
     "waterway-label"
