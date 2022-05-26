@@ -32,28 +32,29 @@ let divChapter2 =
   "<p class=\"neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed\">What's in the soil? What's lurking underground (or out of sight)? Where are NYC's brownfields?</p>" +
   "<p class=\"neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed\">We don't know how many sites in the city are contaminated-there's no official or comprehensive registry. In PlaNYC's 2007 guesstimate, 7600 acres across the city \"could suffer from contamination.\" But there's not much more clarity today. The City Environmental Quality Review, (CEQR) is a useful but incomplete mechanism for determining the locations of contaminated sites across NYC.</p>" +
   "<p class=\"neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed\">Any zoning action triggers an environmental review, known as CEQR, to determine whether any changes to the property or properties involved in the zoning action (in terms of development or use) will require compliance with certain environmental requirements. Upon review, a property can receive an \"e-designation,\" (based on ?) which means that if its owners want to redevelop the site or allow a new use there, they are required to investigate potential hazardous materials contamination, high ambient noise levels or air emission concerns, and remediate them, if necessary.</p>" +
-  '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">E-Designated sites</p>' +
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed"><span class="bg-orange-500 px-1 rounded text-white">E-Designated sites</span></p>' +
+  // '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">E-Designated sites</p>' +
   "</div>";
 
 let divChapter3a =
   '<div class="p-6"><p class="fort-font text-left text-base">Upzoning</p>' +
   '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">Technically, rezoning encompasses all kinds of changes, from expanding or subdividing a single structure, to creating new historic preservation districts, to reductions in housing density.</p>' +
-  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">Here, we mapped rezonings premised on a change from manufacturing to residential and commercial use, and height and building density increases. The Bloomberg and de Blasio administrations used these changes as a major motor for both market-rate and affordable (privately-owned, subsidized) housing development.</p>' +
-  '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">E-Designated sites</p><br>' +
-  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width=".5" fill="#d8d8d8" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">Upzoned areas</p>' +
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">Here, we mapped <span class="bg-slate-300 px-1 rounded">rezonings</span> premised on a change from manufacturing to residential and commercial use, and height and building density increases. The Bloomberg and de Blasio administrations used these changes as a major motor for both market-rate and affordable (privately-owned, subsidized) housing development.</p>' +
+  // '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">E-Designated sites</p><br>' +
+  // '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width=".5" fill="#d8d8d8" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">Upzoned areas</p>' +
   "</div>";
 
 let divChapter3b =
   '<div class="p-6"><p class="neue-font text-left text-base max-w-3xl mx-auto leading-relaxed">Under Bloomberg, large swaths of Williamsburg/Greenpoint, Long Island City, parts of West Harlem, Dumbo, downtown Brooklyn, West Chelsea were rezoned for residential and commercial uses and/or upzoned under Bloomberg. More recently, the de Blasio administration approved similar rezonings in East New York, Downtown Far Rockaway, East Harlem, Jerome Avenue, Inwood, and Gowanus.</p>' +
-  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">We identified and mapped 63 major upzonings between 2003 and 2017. Upzonings suggest where we will find new cleanups.</p>' +
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">We identified and mapped 63 major <span class="bg-slate-300 px-1 rounded">upzonings</span> between 2003 and 2017. Upzonings suggest where we will find new cleanups.</p>' +
   "</div>";
 
 let divChapter4 =
   '<div class="p-6"><p class="fort-font text-left text-base">VCP Program</p>' +
   '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">When a developer wants to repurpose a site with suspected contamination, they can enroll in the city\'s Voluntary Cleanup Program  to get help. The NYC Office of Environmental Remediation (OER) offers developers close guidance and assistance in the process of investigating and remediation contamination. Participation in VCP provides a streamlined process. Bypassing lengthy City Council or Community Board approval processes, participants only require project approval from the OER. [something about standards, etc] On completion of the program, the City grants protection from future liability to both owners and their lenders. And participants can deduct cleanup costs from their federal taxes.</p>' +
-  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">We found approximately 383 sites that were completed by 2019.</p>' +
-  '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Voluntary cleanup sites</p><br>' +
-  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width=".5" fill="#d8d8d8" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">Upzoned areas</p>' +
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">We found approximately 383 <span class="bg-teal-600 text-white px-1 rounded">Voluntary Cleanup Program sites</span> that were completed by 2019.</p>' +
+  // '<svg class="inline-block align-middle mt-5" height="16" width="16"><circle cx="8" cy="8" r="7" stroke="black" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">Voluntary cleanup sites</p><br>' +
+  // '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="black" stroke-width=".5" fill="#d8d8d8" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">Upzoned areas</p>' +
   "</div>";
 
 let divChapter5 =
@@ -61,14 +62,15 @@ let divChapter5 =
   '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">During New York City\'s industrial heyday, from the mid 1800s until the mid 20th century, the Greenpoint/Williamsburg waterfront in Brooklyn was dominated by oil refineries, tanneries, canning and copper manufacturing plants. Toxic contaminants, raw sewage, and garbage were regularly dumped into the surrounding waterways (Greenpoint Petroleum Remediation Project, 2019).</p>' +
   '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">In 2009, the US EPA designated the Newtown Creek, (which borders northeastern Greenpoint) as a Superfund site. One of the largest oil spills in history, the Newtown Creek cover over 50 acres, underlying local businesses and residences.</p>' +
   '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">In 2005, the city adopted the Greenpoint/Williamsburg Waterfront Access Plan.  Areas previously zoned for manufacturing were rezoned for high-density, and high-rise residential uses as well as commercial and green spaces(Greenpoint-Williamsburg Land Use and Waterfront Plan, 2006).</p>' +
-  '<svg class="inline-block align-middle mt-5" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#BF6300" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">E-Designated sites</p>' +
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed"><span class="bg-orange-500 px-1 rounded text-white">E-Designated sites</span></p>' +
+  // '<svg class="inline-block align-middle mt-5" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#BF6300" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">E-Designated sites</p>' +
   "</div>";
 
 let divChapter6 =
   '<div class="p-6"><p class="fort-font text-left text-base">Greenpoint VCP Sites</p>' +
-  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">The rezoning also established approximately ?? e-designated sites. At least 27 of these sites enrolled in the VCP, and 25 have reached completion.</p>' +
-  '<svg class="inline-block align-middle mt-5" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#BF6300" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">E-Designated sites</p><br>' +
-  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#2B8074" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">Voluntary cleanup sites</p>' +
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">The rezoning also established approximately ?? <span class="bg-orange-500 px-1 rounded text-white">e-designated sites</span> sites. At least 27 of these sites enrolled in the <span class="bg-teal-600 text-white px-1 rounded">Voluntary Cleanup Program</span>, and 25 have reached completion.</p>' +
+  // '<svg class="inline-block align-middle mt-5" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#BF6300" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">E-Designated sites</p><br>' +
+  // '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#2B8074" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">Voluntary cleanup sites</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">Here are some demographic comparisons between <span class="bg-sky-500 px-1 rounded text-white">Greenpoint</span> and <span class="bg-slate-300 px-1 rounded">New York City</span>:</p>' +
   '<div class="grid gap-4 lg:grid-cols-2 lg:grid-rows-2 md:grid-cols-1 md:grid-rows-4 pt-4"><img class="pt-4" src="./images/youngGreenpoint.png"><img class="pt-4" src="./images/collegeGreenpoint.png">' +
   '<img class="pt-4" src="./images/rentGreenpoint.png"><img class="pt-4" src="./images/mfiGreenpoint.png"></div>' +
@@ -78,8 +80,10 @@ let divChapter7a =
   '<div class="p-6"><p class="fort-font text-left text-base">Port Richmond E-Designations and VCP Sites</p>' +
   "<p class=\"neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed\">Port Richmond is one of New York City's oldest, industrialized neighborhoods. It is home to the New York Container Terminal, New York City's busiest port. Thanks to the port, hundreds of businesses opened along the waterfront. In 1922, Port Richmond contained 175 industrial plants that employed 35,000 workers. (according to the Board of Trade). Immigrants flocked to the area and it also became Staten Island's densest, and most ethnically diverse, district. </p>" +
   '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">However, throughout the 1950s, 60s and 1970s, factory downsizing, automation caused many of the factories to close and wreaked havoc on the restaurants, repair shops, and other businesses that relied on those factories.</p>' +
-  '<svg class="inline-block align-middle mt-5" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#BF6300" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">E-Designated sites</p><br>' +
-  '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#2B8074" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">Voluntary cleanup sites</p>' +
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed"><span class="bg-orange-500 px-1 rounded text-white">E-Designated sites</span></p>' +
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-1 leading-relaxed"><span class="bg-teal-600 text-white px-1 rounded">Voluntary Cleanup Program</span></p>' +
+  // '<svg class="inline-block align-middle mt-5" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#BF6300" stroke-width=".5" fill="#ff8500" /></svg><p class="inline-block align-middle text-sm mt-5 ml-1">E-Designated sites</p><br>' +
+  // '<svg class="inline-block align-middle mt-1" height="16" width="16"><rect x="1" y="1" width="14" height="14" stroke="#2B8074" stroke-width=".5" fill="#3fa078" /></svg><p class="inline-block align-middle text-sm mt-1 ml-1">Voluntary cleanup sites</p>' +
   "</div>";
 
 let divChapter7b =
@@ -108,7 +112,7 @@ let divChapter8 =
   "</div>";
 
 let divChapter9 =
-  '<div class="p-6"><p class="neue-font text-left leading-relaxed text-base mt-1">And here is how gentrification overlaps with the voluntary cleanup program sites:</p>' +
+  '<div class="p-6"><p class="neue-font text-left leading-relaxed text-base mt-1">And here is how <span class="bg-rose-500 text-white px-1 rounded">gentrification</span> overlaps with the <span class="bg-teal-600 text-white px-1 rounded">Voluntary Cleanup Program</span> sites:</p>' +
   "</div>";
 
 let divChapter1b_old =
