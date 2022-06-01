@@ -2,21 +2,21 @@ var smallMedia = window.matchMedia("(max-width: 600px)").matches;
 var initLoad = false;
 
 var layerTypes = {
-    'fill': ['fill-opacity'],
-    'line': ['line-opacity'],
-    'circle': ['circle-opacity', 'circle-stroke-opacity'],
-    'symbol': ['icon-opacity', 'text-opacity'],
-    'raster': ['raster-opacity'],
-    'fill-extrusion': ['fill-extrusion-opacity'],
-    'heatmap': ['heatmap-opacity']
-}
+  fill: ["fill-opacity"],
+  line: ["line-opacity"],
+  circle: ["circle-opacity", "circle-stroke-opacity"],
+  symbol: ["icon-opacity", "text-opacity"],
+  raster: ["raster-opacity"],
+  "fill-extrusion": ["fill-extrusion-opacity"],
+  heatmap: ["heatmap-opacity"],
+};
 
 var alignments = {
-    'left': 'lefty',
-    'center': 'centered',
-    'right': 'righty',
-    'full': 'fully'
-}
+  left: "lefty",
+  center: "centered",
+  right: "righty",
+  full: "fully",
+};
 
 function getLayerPaintType(layer) {
   var layerType = map.getLayer(layer).type;
@@ -163,7 +163,7 @@ var map = new mapboxgl.Map({
   pitch: config.chapters[0].location.pitch,
   interactive: false,
   transformRequest: transformRequest,
-  projection: config.projection // TODO: update this on config
+  projection: config.projection, // TODO: update this on config
 });
 
 if (config.showMarkers) {
@@ -204,43 +204,44 @@ map.on("load", function () {
       },
     });
   }
-map.addSource('eHeatmap', {
-  'type': 'image',
-  'url': 'data/eHeatmap.png',
-  'coordinates': [
-  [-74.257113635, 40.915485758],
-  [-73.699378802, 40.915485758],
-  [-73.699378802, 40.496109055],
-  [-74.257113635, 40.496109055]
-  ]
+  map.addSource("eHeatmap", {
+    type: "image",
+    url: "data/eHeatmap.png",
+    coordinates: [
+      [-74.257113635, 40.915485758],
+      [-73.699378802, 40.915485758],
+      [-73.699378802, 40.496109055],
+      [-74.257113635, 40.496109055],
+    ],
   });
-map.addLayer(
-  {
-    id: "nyc_land",
-    type: "fill",
-    source: {
-      type: "geojson",
-      data: "data/nyc20.geojson",
-      attribution:
-          'Designed and built by <a href="https://juanfrans.com/" target="_blank">Juan Francisco Saldarriaga</a> at <a href="https://brown.columbia.edu/" target="_blank">The Brown Institute for Media Innovation</a>',
-    },
-    paint: {
-      "fill-color": "#f7f7f7",
-    },
-  },
-  "waterway"
-);
   map.addLayer(
     {
-      id: "nyc",
-      type: "line",
+      id: "nyc_land",
+      type: "fill",
       source: {
         type: "geojson",
         data: "data/nyc20.geojson",
+        attribution:
+          'Designed and built by <a href="https://juanfrans.com/" target="_blank">Juan Francisco Saldarriaga</a> at <a href="https://brown.columbia.edu/" target="_blank">The Brown Institute for Media Innovation</a>',
       },
       paint: {
-        "line-color": "black",
-        "line-width": 0.5
+        "fill-color": "#f7f7f7",
+      },
+    },
+    "waterway"
+  );
+  map.addLayer(
+    {
+      id: "upzonings-line",
+      type: "line",
+      source: {
+        type: "geojson",
+        data: "data/upzonings.geojson",
+      },
+      paint: {
+        "line-color": "#1f2937",
+        "line-width": 0.9,
+        "line-opacity": 0,
       },
     },
     "waterway-label"
@@ -268,26 +269,10 @@ map.addLayer(
           12,
         ],
         "circle-opacity": 0,
-        "circle-stroke-opacity": 0
-      }
-    },
-    "waterway-label"
-  );
-  map.addLayer(
-    {
-      id: "cleanupSitesBIN",
-      type: "fill",
-      source: {
-        type: "geojson",
-        data: "data/cleanupSitesBIN.geojson",
+        "circle-stroke-opacity": 0,
       },
-      paint: {
-        "fill-color": "#3EB8A7",
-        "fill-opacity": 0,
-        "fill-outline-color": "#2B8074"
-      }
     },
-    "road-simple"
+    "upzonings-line"
   );
   map.addLayer(
     {
@@ -316,78 +301,7 @@ map.addLayer(
         ],
       },
     },
-    "waterway-label"
-  );
-  map.addLayer({
-    id: 'eHeatmap',
-    'type': 'raster',
-    'source': 'eHeatmap',
-    'paint': {
-    'raster-fade-duration': 0,
-    'raster-opacity': 0.5
-    }
-  },
-  "nyc"
-  );
-  map.addLayer(
-    {
-      id: "eDesignationsBBL",
-      type: "fill",
-      source: {
-        type: "geojson",
-        data: "data/eDesignationsBBL.geojson",
-      },
-      paint: {
-        "fill-color": "#ff8500",
-        "fill-opacity": 0,
-        "fill-outline-color": "#BF6300"
-      },
-    },
-    "cleanupSitesBIN"
-  );
-  map.addLayer(
-    {
-      id: "upzonings",
-      type: "fill",
-      source: {
-        type: "geojson",
-        data: "data/upzonings.geojson"
-      },
-      paint: {
-        "fill-color": "#d8d8d8",
-        "fill-opacity": 0,
-        "fill-outline-color": "black"
-      }
-    },
     "cleanupSites"
-  );
-  map.addLayer(
-    {
-      id: "gentrificationIndex",
-      type: "fill",
-      source: {
-        type: "geojson",
-        data: "data/gentrificationIndex.geojson",
-      },
-      filter: [">", "scoreScaled", 0],
-      paint: {
-        "fill-color": ["step", ["get", "scoreScaled"],
-          "#ffffff",
-          0,
-          "#ffe6e6",
-          0.2,
-          "#ffbfbf",
-          0.5,
-          "#ff8080",
-          0.6,
-          "#ff4040",
-          0.7,
-          "#ff0000",
-      ],
-        "fill-opacity": 0
-      },
-    },
-    "upzonings"
   );
   map.addLayer(
     {
@@ -400,13 +314,7 @@ map.addLayer(
       paint: {
         "circle-opacity": 0,
         "circle-stroke-opacity": 0,
-        "circle-color": ['match', ['get', 'Program Type'],
-          'BCP', 'red',
-          'HW', 'blue',
-          'VCP', 'yellow',
-          'ERP', 'green',
-          'RCRA', 'orange',
-          'white'],
+        "circle-color": "#4ade80",
         "circle-stroke-color": "#BF6300",
         "circle-stroke-width": 0.3,
         "circle-radius": [
@@ -422,8 +330,100 @@ map.addLayer(
         ],
       },
     },
-    "waterway-label"
+    "eDesignations"
   );
+  map.addLayer(
+    {
+      id: "nyc",
+      type: "line",
+      source: {
+        type: "geojson",
+        data: "data/nyc20.geojson",
+      },
+      paint: {
+        "line-color": "black",
+        "line-width": 0.5,
+      },
+    },
+    "stateCleanup"
+  );
+
+  map.addLayer(
+    {
+      id: "cleanupSitesBIN",
+      type: "fill",
+      source: {
+        type: "geojson",
+        data: "data/cleanupSitesBIN.geojson",
+      },
+      paint: {
+        "fill-color": "#3EB8A7",
+        "fill-opacity": 0,
+        "fill-outline-color": "#2B8074",
+      },
+    },
+    "road-simple"
+  );
+
+  map.addLayer(
+    {
+      id: "eHeatmap",
+      type: "raster",
+      source: "eHeatmap",
+      paint: {
+        "raster-fade-duration": 0,
+        "raster-opacity": 0.5,
+      },
+    },
+    "nyc"
+  );
+  map.addLayer(
+    {
+      id: "eDesignationsBBL",
+      type: "fill",
+      source: {
+        type: "geojson",
+        data: "data/eDesignationsBBL.geojson",
+      },
+      paint: {
+        "fill-color": "#ff8500",
+        "fill-opacity": 0,
+        "fill-outline-color": "#BF6300",
+      },
+    },
+    "cleanupSitesBIN"
+  );
+  map.addLayer(
+    {
+      id: "gentrificationIndex",
+      type: "fill",
+      source: {
+        type: "geojson",
+        data: "data/gentrificationIndex.geojson",
+      },
+      filter: [">", "scoreScaled", 0],
+      paint: {
+        "fill-color": [
+          "step",
+          ["get", "scoreScaled"],
+          "#ffffff",
+          0,
+          "#ffe6e6",
+          0.2,
+          "#ffbfbf",
+          0.5,
+          "#ff8080",
+          0.6,
+          "#ff4040",
+          0.7,
+          "#ff0000",
+        ],
+        "fill-opacity": 0,
+      },
+    },
+    "nyc"
+  );
+
   map.addLayer(
     {
       id: "selectedNtas",
@@ -434,9 +434,8 @@ map.addLayer(
       },
       paint: {
         "line-opacity": 0,
-        // "line-color": "#0ea5e9",
         "line-color": "black",
-        "line-width": 1.5
+        "line-width": 1.5,
       },
     },
     "waterway-label"
@@ -464,7 +463,7 @@ map.addLayer(
         bearing: chapter.location.bearing,
         center: chapter.location.center,
         pitch: chapter.location.pitch,
-        zoom: thisZoom
+        zoom: thisZoom,
       };
       map[chapter.mapAnimation || "flyTo"](thisLocation);
       if (config.showMarkers) {
