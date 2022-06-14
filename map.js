@@ -123,9 +123,9 @@ story.appendChild(features);
 var footer = document.createElement("div");
 
 if (config.footer) {
-  var footerText = document.createElement("p");
-  footerText.innerHTML = config.footer;
-  footer.appendChild(footerText);
+  var footerContent = document.createElement("div");
+  footerContent.innerHTML = config.footer;
+  footer.appendChild(footerContent);
 }
 
 if (footer.innerText.length > 0) {
@@ -305,6 +305,35 @@ map.on("load", function () {
   );
   map.addLayer(
     {
+      id: "superfundSites",
+      type: "circle",
+      source: {
+        type: "geojson",
+        data: "data/superfundSites.geojson",
+      },
+      paint: {
+        "circle-opacity": 0,
+        "circle-stroke-opacity": 0,
+        "circle-color": "#166534",
+        "circle-stroke-color": "#BF6300",
+        "circle-stroke-width": 0.3,
+        "circle-radius": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          2.5,
+          14,
+          4,
+          18,
+          12,
+        ],
+      },
+    },
+    "eDesignations"
+  );
+  map.addLayer(
+    {
       id: "stateCleanup",
       type: "circle",
       source: {
@@ -330,7 +359,36 @@ map.on("load", function () {
         ],
       },
     },
-    "eDesignations"
+    "superfundSites"
+  );
+  map.addLayer(
+    {
+      id: "portRichmondSites",
+      type: "circle",
+      source: {
+        type: "geojson",
+        data: "data/PortRichmond.geojson",
+      },
+      paint: {
+        "circle-opacity": 0,
+        "circle-stroke-opacity": 0,
+        "circle-color": "#4ade80",
+        "circle-stroke-color": "#BF6300",
+        "circle-stroke-width": 0.3,
+        "circle-radius": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          2.5,
+          14,
+          4,
+          18,
+          12,
+        ],
+      },
+    },
+    "stateCleanup"
   );
   map.addLayer(
     {
@@ -345,9 +403,8 @@ map.on("load", function () {
         "line-width": 0.5,
       },
     },
-    "stateCleanup"
+    "portRichmondSites"
   );
-
   map.addLayer(
     {
       id: "cleanupSitesBIN",

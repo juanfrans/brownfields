@@ -4,6 +4,8 @@ Repository for the development site of the Brownfields Cleanup story
 
 TODO:
 
-* Cleanup upzoning file
-* Add building footprint file for Greenpoint
-* Add missing BBLs from cleanup and edesignations (?)
+* [ ] Update text from Google doc
+* [x] Add federal superfund sites
+* [x] Add upzoning outlines and legend
+* [x] Geocode Port Richmond sites
+* [ ] Add sources and data to Google doc
