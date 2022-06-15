@@ -92,11 +92,19 @@ let footerDiv =
   '<div class="p-10"><p class="fort-font text-left text-base max-w-3xl mx-auto">Notes</p>' +
   '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">The index of gentrification is based on a composite score that increases with increasing relative change of key variables (median family income, median rent and proportions of non-Hispanic white, 20-34-year-olds and adults with a 4-year college degree) computed from the years 2000 to 2019 for NYC census tracts that are spatially normalized to the year 2010. These community-level input variables were chosen to represent the nuanced and processual nature of the socioeconomic and demographic shifts associated with gentrification.</p>' +
   '<div class="p-10"><p class="fort-font text-left text-base max-w-3xl mx-auto">Sources</p>' +
-  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed"><ul class="list-disc max-w-3xl mx-auto pl-4"><li>New York State</li>' +
-  '<li>Superfund Program</li>' +
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed"><ul class="list-disc max-w-3xl mx-auto pl-4">' +
+  '<li>E-Designated sites</li>' +
+  '<li>OER cleanup sites</li>' +
+  '<li>Demographic data (ACS 2019...)</li>' +
+  '<li>Borough boundaries</li>' +
+  '<li>Neighborhood tabulation areas</li>' +
+  '<li>Port Richmond contaminated sites</li>' +
+  '<li>NYS cleanup sites</li>' +
+  '<li>Federal Superfund sites</li>' +
+  '<li>Upzonings</li>' +
   '</ul></p>' +
   '<div class="p-10"><p class="fort-font text-left text-base max-w-3xl mx-auto">References</p>' +
-  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">Johnson GD, Checker M, Larson S and Kodali H. 2022. A small area index of gentrification, applied to New York City. International Journal of Geographical Information Science. 36(1): 137-157.</p>' +
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">Johnson GD, Checker M, Larson S and Kodali H. 2022. <a class="underline underline-offset-8" href="https://www.tandfonline.com/doi/full/10.1080/13658816.2021.1931873" target="_blank" rel="noopener noreferrer">A small area index of gentrification, applied to New York City</a>. International Journal of Geographical Information Science. 36(1): 137-157.</p>' +
   "</div>";
 
 var config = {

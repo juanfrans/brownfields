@@ -4,7 +4,7 @@ Repository for the development site of the Brownfields Cleanup story
 
 TODO:
 
-* [ ] Update text from Google doc
+* [x] Update text from Google doc
 * [x] Add federal superfund sites
 * [x] Add upzoning outlines and legend
 * [x] Geocode Port Richmond sites
