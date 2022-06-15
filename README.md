@@ -8,4 +8,5 @@ TODO:
 * [x] Add federal superfund sites
 * [x] Add upzoning outlines and legend
 * [x] Geocode Port Richmond sites
-* [ ] Add sources and data to Google doc
+* [ ] Finish adding sources and data to Google doc
+* [ ] Finish adding bios
