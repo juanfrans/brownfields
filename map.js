@@ -314,7 +314,7 @@ map.on("load", function () {
       paint: {
         "circle-opacity": 0,
         "circle-stroke-opacity": 0,
-        "circle-color": "#166534",
+        "circle-color": "#365314",
         "circle-stroke-color": "#BF6300",
         "circle-stroke-width": 0.3,
         "circle-radius": [
@@ -343,7 +343,9 @@ map.on("load", function () {
       paint: {
         "circle-opacity": 0,
         "circle-stroke-opacity": 0,
-        "circle-color": "#4ade80",
+        "circle-color": ["match", ["get", "Program Type"],
+        "BCP", "#a3e635",
+        "#65a30d"],
         "circle-stroke-color": "#BF6300",
         "circle-stroke-width": 0.3,
         "circle-radius": [
