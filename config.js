@@ -104,7 +104,7 @@ let footerDiv =
   '<li class="pt-2"><a class="underline underline-offset-4" href="https://docs.dos.ny.gov/opd/boa/PortRichmondBOA.pdf" target="_blank" rel="noopener noreferrer">Port Richmond Contaminated Sites</a>, Northfield Community Local Development Corporation and the New York State Department of State.</li>' +
   '<li class="pt-2"><a class="underline underline-offset-4" href="https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg" target="_blank" rel="noopener noreferrer">New York State Environmental Remediation Sites</a>, New York State Department of Environmental Conservation</li>' +
   '<li class="pt-2">Federal Superfund sites</li>' +
-  '<li class="pt-2">Upzonings</li>' +
+  '<li class="pt-2"><a class="underline underline-offset-4" href="https://zola.planning.nyc.gov" target="_blank" rel="noopener noreferrer">Upzonings</a>, ZoLa, New York City\'s Zoning & Land Use Map, New York City Department of City Planning.</li>' +
   '</ul></p>' +
   '<div class="p-10"><p class="fort-font text-left text-lg max-w-3xl mx-auto">References</p>' +
   '<p class="neue-font text-left text-lg max-w-3xl mx-auto mt-6 leading-relaxed">Melissa Checker,  <a class="underline underline-offset-4" href="https://nyupress.org/9781479855278/the-sustainability-myth/" target="_blank" rel="noopener noreferrer">The Sustainability Myth: Environmental Gentrification and the Politics of Justice</a>. New York: NYU Press, 2020.</p>' +
