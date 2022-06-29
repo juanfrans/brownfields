@@ -493,8 +493,10 @@ map.on("load", function () {
       },
       paint: {
         "line-opacity": 0,
-        "line-color": "black",
-        "line-width": 1.5,
+        "line-color": ["match", ["get", "NTAName"],
+        "Greenpoint", "#34d298",
+        "#0ea5e9"],
+        "line-width": 2,
       },
     },
     "waterway-label"
