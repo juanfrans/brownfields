@@ -1,11 +1,12 @@
 let toptitleDiv =
-  '<p class="fort-font text-center text-2xl text-sky-600 max-w-3xl mx-auto my-4">Cleaning Up?</p>';
+  '<p class="fort-font text-center text-2xl text-sky-600 max-w-3xl mx-auto my-4"><a class="hover:text-sky-500" href="https://urbanomnibus.net/series/cleaning-up/" target="_blank" rel="noopener noreferrer">Cleaning Up?</a></p>';
 let titleDiv =
-  '<p class="fort-font text-center text-5xl text-black max-w-3xl mx-auto mt-2 mb-6">Main Title</p>';
+  '<p class="fort-font text-center text-5xl text-black max-w-3xl mx-auto mt-2 mb-6">Concentrated Cleanup</p>';
 let bylineDiv =
   '<p class="neue-font text-center text-sm max-w-3xl mx-auto mb-14 leading-relaxed text-gray-600 sm:px-0 px-3">Melissa Checker, Juan Francisco Saldarriaga, Glen Johnson, Alex Mendell, and Mariana Mogilevich • June 29, 2022</p>';
 
 let introductionDiv =
+  '<p class="neue-font text-left text-lg max-w-3xl mx-auto mt-6 leading-relaxed text-gray-800 sm:px-0 px-3">Since 2009, New York City has been incentivizing private cleanup of contaminated sites. Who benefits?</p>' +
   '<p class="neue-font text-left text-lg max-w-3xl mx-auto mt-6 leading-relaxed text-gray-800 sm:px-0 px-3">Earlier in our series Cleaning Up?, we surveyed <a class="underline underline-offset-8" href="https://urbanomnibus.net/2021/07/hidden-maladies-and-misplaced-remedies/" target="_blank" rel="noopener noreferrer">the vast and largely unidentified landscape of hidden hazards across American cities</a>. Centuries worth of industrial and chemical activities have led to the accumulation and spread of toxins across metropolitan areas, and New York City is no exception. While a panoply of state and federal programs are charged with investigating and remediating sites that meet a certain threshold of risk to human health, the city is replete with smaller sites that might not qualify for higher level cleanup, but that are contaminated nonetheless. Abandoned gas stations, old factories, landfills, former dry cleaners &mdash; all contain remnants of toxic chemicals and can be considered brownfields.</p>' +
   '<p class="neue-font text-left text-lg max-w-3xl mx-auto mt-6 leading-relaxed text-gray-800 sm:px-0 px-3">In 2007, NYC Mayor Michael Bloomberg\'s sweeping sustainability plan, known as  PlaNYC 2030, promised to "clean up all contaminated land in New York City" and launched the nation\'s first municipally-funded brownfield cleanup program. Noting that federal and state programs were insufficient to spur the cleanup and redevelopment of the city\'s vast number of brownfields, Bloomberg offered tax breaks, and other perks to private entities willing to clean up and repurpose these problematic properties.</p>' +
   '<p class="neue-font text-left text-lg max-w-3xl mx-auto mt-6 leading-relaxed text-gray-800 sm:px-0 px-3">In its first decade, NYC\'s Voluntary Cleanup Program supported the remediation of almost 400 contaminated properties. But the program\'s targeting of the private sector means that remediation projects cluster in areas undergoing major residential redevelopment, so that while toxicity is widely distributed, cleanup is highly concentrated.</p>' +
@@ -15,9 +16,10 @@ let stateAndFederalProgramsDiv =
   '<div class="text-gray-800 p-6"><p class="fort-font text-left text-base">Who cleans up contaminated sites in New York City?</p>' +
   '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">Hazardous waste sites in NYC can be remediated through a variety of publicly-funded programs:</p>' + 
   '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">The <a class="bg-lime-900 px-1 rounded text-white underline underline-offset-2" href="https://www.epa.gov/superfund" target="_blank" rel="noopener noreferrer">Federal Superfund Program</a> addresses extensive contamination that presents significant hazards to human health. The enforcement arm of the Superfund program works to hold companies or people responsible for contamination and ensure they either remediate sites themselves, or reimburse the EPA for cleanup work.</p>' +
-  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">New York State has its own <a class="underline underline-offset-2 bg-lime-600 px-1 rounded text-white" href="https://www.dec.ny.gov/chemical/8439.html" target="_blank" rel="noopener noreferrer">Superfund Program</a> that investigates inactive sites suspected of containing hazardous waste. Those found to pose a significant threat to public health or the environment are placed on a priority remediation list. When possible, the state identifies responsible parties and requires them to pay for, or reimburse, cleanup costs.</p>' +
-  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">Sites that are ineligible for Superfund or other remediation programs and are located in under-developed neighborhoods can apply to the <a <a class="underline underline-offset-2 bg-lime-400 px-1 rounded" href="https://www.dec.ny.gov/chemical/8450.html" target="_blank" rel="noopener noreferrer">New York State Brownfield Cleanup Program</a>. If accepted, property owners and developers receive tax credits and other benefits for remediating these properties. Projects located in NYC must meet additional <a class="underline underline-offset-4" href="https://www.bhlawpllc.com/alert/brownfield-cleanup-program-tax-credits-extended-for-ten-years/" target="_blank" rel="noopener noreferrer">criteria</a> related to neighborhood demographics, the site\'s relative value, and its current and proposed uses.</p>' +
-  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">NYC\'s <a class="underline underline-offset-4" href="https://www1.nyc.gov/site/oer/remediation/voluntary-cleanup.page" target="_blank" rel="noopener noreferrer">Voluntary Cleanup Program (VCP)</a> was designed to expand the scope and reach of brownfield redevelopment and to compensate for the state\'s notoriously long and laborious application and certification process.</p>' +
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">New York state\'s <span class="bg-lime-600 px-1 rounded text-white">Environmental Remediation sites</span> are administrated by the following programs: <a class="underline underline-offset-4" href="https://www.dec.ny.gov/chemical/8444.html" target="_blank" rel="noopener noreferrer">Environmental Restoration</a>, <a class="underline underline-offset-4" href="https://www.dec.ny.gov/chemical/8768.html" target="_blank" rel="noopener noreferrer">Hazardous Waste Management</a>, <a class="underline underline-offset-4" href="https://www.dec.ny.gov/chemical/8661.html" target="_blank" rel="noopener noreferrer">Inactive Hazardous Waste Disposal</a>, <a class="underline underline-offset-4" href="https://www.dec.ny.gov/chemical/8439.html" target="_blank" rel="noopener noreferrer">Superfund</a>, and <a class="underline underline-offset-4" href="https://www.dec.ny.gov/chemical/8450.html" target="_blank" rel="noopener noreferrer">Brownfield Cleanup</a>.</p>'+
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">The most contaminated sites fall under the state\'s Superfund Program which places those found to pose a significant threat to public health or the environment on a priority remediation list. When possible, the state identifies responsible parties and requires them to pay for, or reimburse, cleanup costs.</p>' +
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">Sites that are ineligible for Superfund or other remediation programs and are located in under-developed neighborhoods can apply to the <span class="bg-lime-400 px-1 rounded">Brownfield Cleanup Program</span>. If accepted, property owners and developers receive tax credits and other benefits for remediating these properties. Projects located in NYC must meet additional <a class="underline underline-offset-4" href="https://www.bhlawpllc.com/alert/brownfield-cleanup-program-tax-credits-extended-for-ten-years/" target="_blank" rel="noopener noreferrer">criteria</a> related to neighborhood demographics, the site\'s relative value, and its current and proposed uses.</p>' +
+  '<p class="neue-font text-left text-base max-w-3xl mx-auto mt-6 leading-relaxed">On a municipal level, NYC\'s <a class="underline underline-offset-4" href="https://www1.nyc.gov/site/oer/remediation/voluntary-cleanup.page" target="_blank" rel="noopener noreferrer">Voluntary Cleanup Program (VCP)</a> was designed to expand the scope and reach of brownfield redevelopment and to compensate for the state\'s notoriously long and laborious application and certification process.</p>' +
   "</div>";
 
 let eDesignationsDiv =
@@ -78,10 +80,11 @@ let portRichmondVCPDiv =
 
 let gentrificationNYCDiv =
   '<div class="text-gray-800 p-6"><p class="fort-font text-left text-base">Gentrification Across NYC</p>' +
-  '<p class="neue-font text-left leading-relaxed text-base mt-5">Using five key variables&#42; representing socioeconomic and demographic shifts associated with gentrification, we created a gentrification index and mapped the relative pace of gentrification across the city, between 2000 and 2019.</p>' +
+  '<p class="neue-font text-left leading-relaxed text-base mt-5">To examine the relationship between gentrification and the location of VCP sites across New York City, we first needed to capture the complexities of the gentrification, or neighborhood upscaling, process. We selected 5 key demographic indicators&#42; at the census tract level and measured the degree to which they changed over a 19-year period.</p>' +
+  '<p class="neue-font text-left leading-relaxed text-base mt-5">Darker areas show higher rates of gentrification between 2000 and 2019, while lighter areas show lower rates of gentrification. Importantly, some neighborhoods, like SoHo and Tribeca in Manhattan, gentrified prior to the year 2000; therefore they score low on our gentrification scale even though they are affluent neighborhoods.</p>' +
   '<p class="neue-font text-left leading-relaxed text-base mt-5">Here is how <span class="bg-sky-400 px-1 rounded text-white">Port Richmond</span> compares to <span class="bg-emerald-400 px-1 rounded text-white">Greenpoint</span> and <span class="bg-slate-300 px-1 rounded">New York City</span> as a whole on this gentrification scale:</p>' +
   '<img class="pt-4" src="./images/gentrificationComparison.png"></p>' +
-  '<p class="neue-font text-left text-sm italic max-w-3xl mx-auto mt-6 leading-relaxed">&#42; Variables include: median family income, median rent, proportions of non-Hispanic white, 20-34-year-olds, and adults with a 4-year college degree.</p>' +
+  '<p class="neue-font text-left text-sm italic max-w-3xl mx-auto mt-6 leading-relaxed">&#42; Variables include median family income, median rent, proportions of non-Hispanic white, 20-34-year-olds, and adults with a 4-year college degree.</p>' +
   "</div>";
 
 let gentrificationVCPDiv =
@@ -163,11 +166,6 @@ var config = {
           duration: 300,
         },
         {
-          layer: "eHeatmap",
-          opacity: 0.5,
-          duration: 300,
-        },
-        {
           layer: "eDesignations",
           opacity: 0,
           duration: 300,
@@ -242,11 +240,6 @@ var config = {
         {
           layer: "nyc",
           opacity: 1,
-          duration: 300,
-        },
-        {
-          layer: "eHeatmap",
-          opacity: 0.5,
           duration: 300,
         },
         {
@@ -327,11 +320,6 @@ var config = {
           duration: 300,
         },
         {
-          layer: "eHeatmap",
-          opacity: 0.5,
-          duration: 300,
-        },
-        {
           layer: "eDesignations",
           opacity: 1,
           duration: 300,
@@ -406,11 +394,6 @@ var config = {
         {
           layer: "nyc",
           opacity: 1,
-          duration: 300,
-        },
-        {
-          layer: "eHeatmap",
-          opacity: 0.5,
           duration: 300,
         },
         {
@@ -491,11 +474,6 @@ var config = {
           duration: 300,
         },
         {
-          layer: "eHeatmap",
-          opacity: 0,
-          duration: 300,
-        },
-        {
           layer: "eDesignations",
           opacity: 0,
           duration: 300,
@@ -570,11 +548,6 @@ var config = {
         {
           layer: "nyc",
           opacity: 1,
-          duration: 300,
-        },
-        {
-          layer: "eHeatmap",
-          opacity: 0,
           duration: 300,
         },
         {
@@ -655,11 +628,6 @@ var config = {
           duration: 300,
         },
         {
-          layer: "eHeatmap",
-          opacity: 0,
-          duration: 300,
-        },
-        {
           layer: "eDesignations",
           opacity: 0,
           duration: 300,
@@ -734,11 +702,6 @@ var config = {
         {
           layer: "nyc",
           opacity: 1,
-          duration: 300,
-        },
-        {
-          layer: "eHeatmap",
-          opacity: 0,
           duration: 300,
         },
         {
@@ -819,11 +782,6 @@ var config = {
           duration: 300,
         },
         {
-          layer: "eHeatmap",
-          opacity: 0,
-          duration: 300,
-        },
-        {
           layer: "eDesignations",
           opacity: 0,
           duration: 300,
@@ -898,11 +856,6 @@ var config = {
         {
           layer: "nyc",
           opacity: 1,
-          duration: 300,
-        },
-        {
-          layer: "eHeatmap",
-          opacity: 0,
           duration: 300,
         },
         {

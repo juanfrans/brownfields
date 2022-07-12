@@ -204,16 +204,16 @@ map.on("load", function () {
       },
     });
   }
-  map.addSource("eHeatmap", {
-    type: "image",
-    url: "data/eHeatmap.png",
-    coordinates: [
-      [-74.257113635, 40.915485758],
-      [-73.699378802, 40.915485758],
-      [-73.699378802, 40.496109055],
-      [-74.257113635, 40.496109055],
-    ],
-  });
+  // map.addSource("eHeatmap", {
+  //   type: "image",
+  //   url: "data/eHeatmap.png",
+  //   coordinates: [
+  //     [-74.257113635, 40.915485758],
+  //     [-73.699378802, 40.915485758],
+  //     [-73.699378802, 40.496109055],
+  //     [-74.257113635, 40.496109055],
+  //   ],
+  // });
   map.addLayer(
     {
       id: "nyc_land",
@@ -423,19 +423,18 @@ map.on("load", function () {
     },
     "road-simple"
   );
-
-  map.addLayer(
-    {
-      id: "eHeatmap",
-      type: "raster",
-      source: "eHeatmap",
-      paint: {
-        "raster-fade-duration": 0,
-        "raster-opacity": 0.5,
-      },
-    },
-    "nyc"
-  );
+  // map.addLayer(
+  //   {
+  //     id: "eHeatmap",
+  //     type: "raster",
+  //     source: "eHeatmap",
+  //     paint: {
+  //       "raster-fade-duration": 0,
+  //       "raster-opacity": 0.5,
+  //     },
+  //   },
+  //   "nyc"
+  // );
   map.addLayer(
     {
       id: "eDesignationsBBL",
@@ -482,7 +481,6 @@ map.on("load", function () {
     },
     "nyc"
   );
-
   map.addLayer(
     {
       id: "selectedNtas",
